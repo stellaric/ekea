@@ -1,253 +1,213 @@
-
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   padding: 0;
+  background-color: white;
+}
+header {
+  width: 100%;
+  background-color: #B7B7A4;
+
 }
 
-/*_______version mobile______*/
-@media only screen and (max-width : 767px) {
+
+.iconify {
+
+  margin-left: 50px;
+}
 
 
-  /*général*/
-  /*footer*/
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: black;
-    color: white;
-    height: 139px;
-    text-align: center;
-    align-items: center;
+/*barre de navigation*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /*positionne la barre de navigation en haut à gauche de la page*/
+    z-index: 1;
+    /*positionnée au-dessus des autres éléments de la page*/
+    top: 0;
+    left: 0;
+    background-color: #a5a58df8;
+    overflow-x: hidden;
+    /* ne sera pas défilable horizontalement*/
+    transition: 0.5s;
+    /*temps douvrture et de fermeture*/
+    padding-top: 100px;
   }
 
-  a#logo {
+  h2 {
+    text-align: center;
+    font-size: 48px;
+    color: white;
+  }
+  .sidenav a {
+    padding: 8px 8px 30px 32px;
     text-decoration: none;
+    font-family: 'Italiana', serif;
+    font-size: 25px;
     color: white;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 48px;
-  }
-
-
-
-  /*_______page accueil (index.html)______*/
-
-  #banniere_accueil {
-    background: url('../../images/header.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 230px;
-
-  }
-
-
-
-  /* Texte défilant */
-  .messagedefilant {
     display: block;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    max-width: 437px;
-    height: 54px;
-    background-color: black;
-  }
-
-  .messagedefilant div {
-    position: absolute;
-    margin-top: 12px;
-    min-width: 100%;
-    /* au minimum la largeur du conteneur */
-  }
-
-  .messagedefilant div span,
-  .messagedefilant div:after {
-    position: relative;
-    display: inline-block;
-    font-size: 1.5rem;
-    white-space: nowrap;
-    top: 0;
-  }
-
-  .messagedefilant div span {
-    animation: defilement 7s infinite linear;
-    background: black;
-    color: white;
-    width: 437px;
-  }
-
-
-  @keyframes defilement {
-    0% {
-      margin-left: -200%;
-    }
-
-    100% {
-      margin-left: 100%;
-    }
-  }
-
-
-
-  /*section bienvenue */
-  #bienvenue {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #B7B7A4;
-  }
-
-  #bienvenue h1 {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 39px;
-  }
-
-  #bienvenue p {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     text-align: center;
-
+    transition: 0.3s;
   }
-
-  /*section inspiration */
-  #inspiration {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #A5A58D;
+  
+  .sidenav a:hover {
+    color: #9e3434;
   }
-
-  #inspiration h2 {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 39px;
-  }
-
-  #inspiration p {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    text-align: center;
-
-  }
-
-  /*btn voir plus*/
-  #inspiration button {
-    padding: 15px 25px;
-    border: unset;
-    border-radius: 15px;
-    color: white;
-    z-index: 1;
-    background: black;
-    position: relative;
-    font-weight: 1000;
-    font-size: 15px;
-    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-    transition: all 250ms;
-    overflow: hidden;
-    margin-bottom: 12px;
-  }
-
-  #inspiration button::before {
-    content: "";
+  
+  .sidenav .closebtn {
     position: absolute;
     top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    border-radius: 15px;
-    background-color: grey;
-    z-index: -1;
-    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-    transition: all 250ms
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
   }
 
-  #inspiration button:hover {
-    color: #e8e8e8;
-  }
+.copyright {
+background-color: #6B705C;
+height: 40%;
+margin-bottom: 0;
+}
 
-  #inspiration button:hover::before {
-    width: 100%;
-  }
+.reseaux {
+display:inline-flex
 
-  /*section service */
-  #service {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #6B705C;
-  }
+ }
+ 
+ .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ align-items:center ;
+ }
 
-  #service h2 {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 39px;
-  }
+.banniere {
+  background-image:url("../../images/header_produit.jpeg");
+  height: 230px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-  #service p {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    text-align: center;
-  }
+/*------------DROPDOWN-------------------------*/
+.dropbtn {
+  background-color: #A5A58D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 230px;
+ 
+}
 
-  /*btn voir plus*/
-  #service button {
-    padding: 15px 25px;
-    border: unset;
-    border-radius: 15px;
-    color: white;
-    z-index: 1;
-    background: black;
-    position: relative;
-    font-weight: 1000;
-    font-size: 15px;
-    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-    transition: all 250ms;
-    overflow: hidden;
-    margin-bottom: 12px;
-  }
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #A5A58D;
+}
 
-  #service button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    border-radius: 15px;
-    background-color: grey;
-    z-index: -1;
-    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-    transition: all 250ms
-  }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-  #service button:hover {
-    color: #e8e8e8;
-  }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 230px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
 
-  #service button:hover::before {
-    width: 100%;
-  }
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
 
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+
+/*-----------filter------------------*/
+
+.filterDiv {
+  float: left;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.container img {
+  width: 250px;
+  height: 200px;
+}
+
+.confort{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.surface{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.deco{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+
+
+
+
+/*-------------FOOTER------------*/
+footer {
+  background-color: #1e1e1e9a;
+  height: 100px;
+  margin-bottom: 0px;
 }
