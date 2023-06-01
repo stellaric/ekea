@@ -1,3 +1,5 @@
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -11,33 +13,91 @@ body {
 @media only screen and (max-width : 767px) {
 
 
-/*général*/
+  /*général*/
+  /*footer*/
   .footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-background: rgb(75 74 74 / 86%);
+    background: black;
     color: white;
     height: 139px;
     text-align: center;
     align-items: center;
-}
-
-  a#logo {
-    text-decoration:none ;
-    color:white;
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-line-height: 48px;
   }
 
-.footer p {
-  
-}
-  
+  a#logo {
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+
+
   /*_______page accueil (index.html)______*/
+
+  #banniere_accueil {
+    background: url('../../images/header.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 230px;
+
+  }
+
+
+
+  /* Texte défilant */
+  .messagedefilant {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 437px;
+    height: 54px;
+    background-color: black;
+  }
+
+  .messagedefilant div {
+    position: absolute;
+    margin-top: 12px;
+    min-width: 100%;
+    /* au minimum la largeur du conteneur */
+  }
+
+  .messagedefilant div span,
+  .messagedefilant div:after {
+    position: relative;
+    display: inline-block;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    top: 0;
+  }
+
+  .messagedefilant div span {
+    animation: defilement 7s infinite linear;
+    background: black;
+    color: white;
+    width: 437px;
+  }
+
+
+  @keyframes defilement {
+    0% {
+      margin-left: -200%;
+    }
+
+    100% {
+      margin-left: 100%;
+    }
+  }
+
+
+
   /*section bienvenue */
   #bienvenue {
     display: flex;
@@ -89,40 +149,44 @@ line-height: 48px;
   }
 
   /*btn voir plus*/
-#inspiration button {
- padding: 15px 25px;
- border: unset;
- border-radius: 15px;
- color: white;
- z-index: 1;
- background: rgb(75 74 74 / 86%);
- position: relative;
- font-weight: 1000;
- font-size: 15px;
- box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
- transition: all 250ms;
- overflow: hidden;
-  margin-bottom:12px;
-}
-#inspiration button::before {
- content: "";
- position: absolute;
- top: 0;
- left: 0;
- height: 100%;
- width: 0;
- border-radius: 15px;
- background-color: grey;
- z-index: -1;
- box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
- transition: all 250ms
-}
-#inspiration button:hover {
- color: #e8e8e8;
-}
- #inspiration button:hover::before {
- width: 100%;
-}
+  #inspiration button {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: white;
+    z-index: 1;
+    background: black;
+    position: relative;
+    font-weight: 1000;
+    font-size: 15px;
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    margin-bottom: 12px;
+  }
+
+  #inspiration button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: grey;
+    z-index: -1;
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+  }
+
+  #inspiration button:hover {
+    color: #e8e8e8;
+  }
+
+  #inspiration button:hover::before {
+    width: 100%;
+  }
+
   /*section service */
   #service {
     display: flex;
@@ -132,53 +196,58 @@ line-height: 48px;
     background-color: #6B705C;
   }
 
-  #service h2{
-     font-family: 'Inter';
+  #service h2 {
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 39px;
   }
+
   #service p {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     text-align: center;
   }
-    /*btn voir plus*/
-#service button {
- padding: 15px 25px;
- border: unset;
- border-radius: 15px;
- color: white;
- z-index: 1;
- background: rgb(75 74 74 / 86%);
- position: relative;
- font-weight: 1000;
- font-size: 15px;
- box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
- transition: all 250ms;
- overflow: hidden;
-  margin-bottom:12px;
-}
-#service button::before {
- content: "";
- position: absolute;
- top: 0;
- left: 0;
- height: 100%;
- width: 0;
- border-radius: 15px;
- background-color: grey;
- z-index: -1;
- box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
- transition: all 250ms
-}
-#service button:hover {
- color: #e8e8e8;
-}
- #service button:hover::before {
- width: 100%;
-}
-  
+
+  /*btn voir plus*/
+  #service button {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: white;
+    z-index: 1;
+    background: black;
+    position: relative;
+    font-weight: 1000;
+    font-size: 15px;
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    margin-bottom: 12px;
+  }
+
+  #service button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: grey;
+    z-index: -1;
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+  }
+
+  #service button:hover {
+    color: #e8e8e8;
+  }
+
+  #service button:hover::before {
+    width: 100%;
+  }
+
 }
