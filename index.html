@@ -6,51 +6,82 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>E-kea</title>
 </head>
 
 <body>
   <header>
-    <p>ceci est le header </p>
+    <div class="owl-carousel owl-theme">
+      
+      <div class="slide slide-1">
+        <div class="slide-content">
+        </div>
+      </div>
+
+       <div class="slide slide-2">
+        <div class="slide-content">
+        </div>
+      </div>
+
+       <div class="slide slide-3">
+        <div class="slide-content">
+        </div>
+      </div>
+
+    </div>
   </header>
 
 
-  
-  
-<!--MAIN -->
+
+
+  <!--MAIN -->
   <main>
-<!--section bienvenue-->
+    <!--section texte_defile-->
+    <div class="messagedefilant">
+      <div data-text="ceci est un test">
+        <span>-20% dès 99€ d'achat &nbsp;&nbsp; -35% sur les décorations &nbsp;&nbsp; -50% sur tout avec le code JADELIA
+        </span>
+      </div>
+    </div>
+    <!-->
+    
+    <!--section bienvenue-->
     <section id="bienvenue">
       <h1>Bienvenue !</h1>
       <p>Bienvenue dans notre univers de meubles et décoration ! Explorez des inspirations pour créer votre espace
         idéal. Découvrez des pièces uniques et de qualité pour embellir votre intérieur.</p>
     </section>
-<!-->
+    <!-->
+    
     <!--section inspiration-->
     <section id="inspiration">
-      <h2>Nos inspiration</h2>
+      <h2>Nos inspirations</h2>
       <p>Découvrez nos inspirations </p>
       <form method="get" action="vues/vue-inspiration.html">
-        <button  >Voir plus </button>
+        <button>Voir plus </button>
       </form>
     </section>
-<!-->
+    <!-->
      <!--section service-->
     <section id="service">
       <h2>Nos services </h2>
       <p>Découvrez nos services </p>
       <form method="get" action="vues/vue-services.html">
-        <button >Voir plus </button>
+        <button>Voir plus </button>
       </form>
     </section>
- <!---->
+    <!---->
   </main>
-<!--------->
-  <footer> 
-  <div class="footer">
-   <a href="#"id="logo">e.kea</a>
-    <p>Nous Contacter</p>
-  </div>
+  <!--------->
+  <footer>
+    <div class="footer">
+      <a href="#" id="logo">e.kea</a>
+      <p>Nous Contacter</p>
+    </div>
   </footer>
 </body>
 
