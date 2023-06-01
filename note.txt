@@ -1,0 +1,20 @@
+Sources :
+
+loader : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader
+
+texte qui défile : https://codepen.io/jreaux62/pen/EZYBeW
+
+filtre : https://www.w3schools.com/howto/howto_js_filter_elements.asp
+
+dropdown filtre: https://www.w3schools.com/howto/howto_css_dropdown.asp
+ou
+https://www.w3schools.com/howto/howto_js_dropdown.asp
+
+
+image plein ecran : https://www.w3schools.com/howto/howto_css_modal_images.asp
+
+menu burger : https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
+ 	https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
+
+
+
