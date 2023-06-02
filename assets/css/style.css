@@ -12,7 +12,16 @@ body {
 
 
   /*général*/
+  /*navbar*/
+  
   /*header*/
+  .header_accueil {
+    background: url('../../images/header.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 230px;
+  }
+
   /*footer*/
   .footer {
     display: flex;
