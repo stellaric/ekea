@@ -69,7 +69,8 @@ margin-bottom: 0;
 }
 
 .reseaux {
-display:inline-flex
+display:flex;
+
 
  }
  
@@ -82,6 +83,15 @@ display:inline-flex
 
 .banniere {
   background-image:url("../../images/header_produit.jpeg");
+  height: 230px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bannierecontact {
+
+ background-image:url("../../images/header_contact.jpg");
   height: 230px;
   background-position: center;
   background-size: cover;
@@ -209,5 +219,124 @@ display:inline-flex
 footer {
   background-color: #1e1e1e9a;
   height: 100px;
-  margin-bottom: 0px;
+  margin-bottom: auto;
 }
+
+.footer-content {
+  padding: 20px;
+}
+
+.copyright {
+  text-align: center;
+  padding: 100px;
+}
+
+/*-----------------------------------------------------------------------PAGE CONTACT-----------------------------------------*/
+
+#header_contact {
+  width: 100%;
+  background-color: #CB997E;
+
+}
+
+
+.body_contact {
+  margin: 0;
+  padding: 0;
+  background-color: #CB997E;
+}
+
+
+#titre_contact {
+  text-align: center;
+  font-size: 32px;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* padding contenant */
+.container_contact {
+  padding: 16px;
+  background-color:  #C7815C;
+  ;
+  border-radius: 10px;
+  justify-content: center;
+  margin: 10% 10%;
+}
+
+/* largeurs des champs*/
+input[type=text],
+input[type=message],
+input[type=tel],
+input[type=email]
+/*input[type=date],
+input[type=number]*/ {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: white;
+  border-radius: 10px;
+}
+
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid white;
+  margin-bottom: 25px;
+}
+
+/* bouton valider */
+.registerbtn {
+  background-color: #A76F51;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+/*-----------------------MAP----------------*/
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 10%;
+  height: 300px;
+
+}
+
+.text {
+  flex-basis: 50%;
+  padding-right: 20px;
+  background-color:#C7815C;
+
+  color: black;
+  font-size: 2em;
+  width: 400px;
+ 
+
+
+}
+
+
+.map {
+  flex-basis: 50%;
+  border-radius: 0 20px 20px 0;
+}
+
+

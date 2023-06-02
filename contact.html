@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js"></script>
+  <title>E-kea</title>
+</head>
+
+<body class="body_contact">
+ 
+    <header id="header_contact">
+
+       <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!-- lien symbole de croix  configurée pr que lorsqu'on clique dessus, il ne se passe rien -->
+            <h2>e.kea</h2>
+            <a href="#">Accueil</a>
+            <a href="#">Inspirations</a>
+            <a href="#">Produits</a>
+            <a href="#">Nos services</a>
+            <a href="#">Nous contacter</a>
+
+            <div class="reseaux">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!-- lien symbole de croix  configurée pr que lorsqu'on clique dessus, il ne se passe rien -->
+            <a href="#"><span class="iconify" data-icon="iconoir:instagram" style="color: white;"></span></a>
+            <a href="#"><span class="iconify" data-icon="eva:facebook-outline" style="color: white;"></span></a>
+            <a href="#"><span class="iconify" data-icon="basil:twitter-outline" style="color: white;"></span></a>
+            </div>
+            <div class="copyright">
+                <p>Copyright-Jade Stella</p>
+            </div>
+          </div>
+            <div class="navbar">
+            <span class="iconify" data-icon="fontisto:nav-icon-a" style="color: black;" data-width="45" data-height="38.58" onclick="openNav()"></span>
+            <h1>e.kea</h1>
+            <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="45" data-height="38.58"></span>  
+            </div>
+        </div>
+        <div class="bannierecontact">
+        
+        </div>
+  </header>
+
+
+  <main>
+    <h3 id="titre_contact">Nous contacter</h3>
+
+    <form action="/action_page.php">
+      <div class="container_contact">
+
+        <p>Une question ? un problème ? 
+          N’hésiter pas à nous envoyer un message </p>
+        <hr>
+        <label for="fname">Prénom</label>
+        <input type="text" name="fname">
+  
+        <label for="lname">Nom</label>
+        <input type="text" name="lname"> <br>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Entrez votre Email" name="email" id="email" required>
+
+        <label for="fname">Sujet</label>
+        <input type="text" name="fname">
+        
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" cols="25"></textarea><br>
+
+
+        </hr>
+       
+
+        <button type="submit" class="registerbtn">Envoyer mon message</button>
+      </div>
+    </form>
+
+
+    <div class="container">
+      <div class="text">
+      <p>adresse</p>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.617020072308!2d2.3314769130855377!3d48.865513000084384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e255f38e85d%3A0x791ccfcf111d862!2s13%20Av.%20de%20l&#39;Op%C3%A9ra%2C%2075001%20Paris!5e0!3m2!1sfr!2sfr!4v1683655901385!5m2!1sfr!2sfr"
+          width="300" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    
+  </div>
+  </main>
+<footer>
+    <h2>e.kea</h2>
+</footer>
+</body>
+</html>
