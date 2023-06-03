@@ -12,7 +12,7 @@ header {
 
 .iconify {
 
-  margin-left: 50px;
+  margin-left: 10px;
 }
 
 
@@ -324,13 +324,10 @@ hr {
   flex-basis: 50%;
   padding-right: 20px;
   background-color:#C7815C;
-
   color: black;
   font-size: 2em;
   width: 400px;
  
-
-
 }
 
 
@@ -339,4 +336,81 @@ hr {
   border-radius: 0 20px 20px 0;
 }
 
+
+/*-----------------------------------------------------------------------PAGE PANIER VIDE-----------------------------------------*/
+h3 {
+text-align: center;
+font-size: 30px;
+
+}
+
+.panier {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 100%;
+  margin-bottom: 30px;
+}
+
+
+
+
+.total {
+background-color: #B7B7A4;
+height: 100px;
+margin-bottom: 0;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+
+}
+
+.button {
+  background-color: #D9D9D9;
+  border: none;
+  color: rgb(87, 85, 85);
+  padding: 8px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 10px 90px;
+  opacity: 1;
+  transition: 0.3s;
+  width: 250px;
+  border-radius: 10px;
+
+}
+
+.total_contenu{
+  display: flex;
+flex-direction: wrap;
+justify-content: space-between;
+font-size: 20px;
+}
+
+.total_btn {
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: black;
+  color: white;
+  height: 139px;
+  text-align: center;
+  align-items: center;
+}
+
+a#logo {
+  text-decoration: none;
+  color: white;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+}
 
