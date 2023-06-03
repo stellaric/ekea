@@ -414,3 +414,30 @@ a#logo {
   line-height: 48px;
 }
 
+/*-----------------------------------------------------------------------PAGE PANIER -----------------------------------------*/
+
+.articles img {
+width: 151px;
+height: 214px;
+}
+
+
+.description {
+  padding: 10px;
+  }
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+ 
+  margin: 30px;
+ 
+}
+
+.article_1, .article_2 {
+  display: flex;
+
+}
+
