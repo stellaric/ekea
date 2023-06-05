@@ -13,14 +13,54 @@ body {
 
   /*général*/
   /*navbar*/
-  
+
   /*header*/
-  .header_accueil {
-    background: url('../../images/header.jpeg');
-    background-size: cover;
-    background-position: center;
-    height: 230px;
+  .owl-carousel {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
   }
+
+  .slide {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, .5);
+  }
+
+  .slide-1 {
+    background: url(../../images/header.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  }
+
+  .slide-2 {
+    background-image: url(../../images/header_contact.jpeg);
+  }
+
+  .slide-3 {
+    background-image: url(../../images/header_produit.jpeg);
+
+  }
+
+  .owl-dots {
+    display: none;
+  }
+
 
   /*footer*/
   .footer {
@@ -102,7 +142,6 @@ body {
     overflow: hidden;
     position: relative;
     width: 100%;
-    max-width: 437px;
     height: 54px;
     background-color: black;
   }
@@ -294,5 +333,58 @@ body {
   #service button:hover::before {
     width: 100%;
   }
+
+
+
+  /*_______page inspiration ______*/
+  #header_inspiration {
+    background: url('../../images/header_inspi.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 230px;
+  }
+
+  #section_inspiration {
+    background-color: #B7B7A4;
+    height: 760px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #section_inspiration h2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+
+  }
+
+  #contenu_inspiration {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #contenu_inspiration img {
+    width: 160px;
+    height: 170px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .card_inspiration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*image plein ecran */
+
+
 
 }
