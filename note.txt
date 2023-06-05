@@ -17,4 +17,7 @@ menu burger : https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
  	https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5a5ee88 (version 4)

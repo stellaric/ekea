@@ -3,6 +3,13 @@ body {
   padding: 0;
   background-color: white;
 }
+<<<<<<< HEAD
+=======
+/*_______version mobile______*/
+@media only screen and (max-width : 767px) {
+
+
+>>>>>>> 5a5ee88 (version 4)
 header {
   width: 100%;
   background-color: #B7B7A4;
@@ -66,11 +73,25 @@ header {
 background-color: #6B705C;
 height: 40%;
 margin-bottom: 0;
+<<<<<<< HEAD
 }
 
 .reseaux {
 display:flex;
 
+=======
+color: white;
+text-align: center;
+padding: 73px;
+height: 182px;
+margin: -26px;
+}
+
+
+.reseaux {
+display:flex;
+justify-content: center;
+>>>>>>> 5a5ee88 (version 4)
 
  }
  
@@ -352,6 +373,14 @@ font-size: 30px;
   gap: 10px;
   height: 100%;
   margin-bottom: 30px;
+<<<<<<< HEAD
+=======
+  
+}
+
+a {
+  color: black;
+>>>>>>> 5a5ee88 (version 4)
 }
 
 
@@ -359,7 +388,11 @@ font-size: 30px;
 
 .total {
 background-color: #B7B7A4;
+<<<<<<< HEAD
 height: 100px;
+=======
+height: 150px;
+>>>>>>> 5a5ee88 (version 4)
 margin-bottom: 0;
 display: flex;
 flex-direction: column;
@@ -390,8 +423,11 @@ justify-content: space-between;
 font-size: 20px;
 }
 
+<<<<<<< HEAD
 .total_btn {
 }
+=======
+>>>>>>> 5a5ee88 (version 4)
 
 .footer {
   display: flex;
@@ -438,6 +474,25 @@ height: 214px;
 
 .article_1, .article_2 {
   display: flex;
+<<<<<<< HEAD
 
 }
 
+=======
+}
+
+input{
+  width: 20px;
+}
+
+
+.quantite {
+    margin: 40px;
+}
+
+.prix {
+  margin-top: 50px;
+}
+
+}
+>>>>>>> 5a5ee88 (version 4)
