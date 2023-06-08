@@ -101,6 +101,15 @@ for (var i = 0; i < btns.length; i++) {
 // modal crée par stella 
 
 var img_modal
-function Modal(img_modal){
-document.getElementById(img_modal).style.display='block'
+function Modal(img_modal) {
+  document.getElementById(img_modal).style.display = 'block'
 }
+
+//carrousel
+
+const carousel = document.querySelector('.contener_slideshow');
+const slideWidth = carousel.clientWidth;
+const slideCount = carousel.children.length;
+
+carousel.style.width = `${slideWidth * slideCount}px`;
+
