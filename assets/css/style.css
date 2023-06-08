@@ -3,13 +3,9 @@ body {
   padding: 0;
   background-color: white;
 }
-<<<<<<< HEAD
-=======
-/*_______version mobile______*/
-@media only screen and (max-width : 767px) {
 
+/*____________________version ordi___________*/
 
->>>>>>> 5a5ee88 (version 4)
 header {
   width: 100%;
   background-color: #B7B7A4;
@@ -73,13 +69,6 @@ header {
 background-color: #6B705C;
 height: 40%;
 margin-bottom: 0;
-<<<<<<< HEAD
-}
-
-.reseaux {
-display:flex;
-
-=======
 color: white;
 text-align: center;
 padding: 73px;
@@ -91,7 +80,389 @@ margin: -26px;
 .reseaux {
 display:flex;
 justify-content: center;
->>>>>>> 5a5ee88 (version 4)
+
+ }
+ 
+ .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ align-items:center ;
+ }
+
+/*footer de toutes les pages*/
+ .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: black;
+  color: white;
+  height: 139px;
+  text-align: center;
+  align-items: center;
+}
+
+a#logo {
+  text-decoration: none;
+  color: white;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+
+
+
+
+ /*____________________page panier vide____________*/
+ h3 {
+  text-align: center;
+  font-size: 30px;
+  
+  }
+  
+  .panier {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 100%;
+    margin-bottom: 30px;
+    
+  }
+
+  
+#achats{
+  display: flex;
+  flex-direction: column;
+}
+
+   
+  a {
+    color: black;
+  }
+  
+  
+  
+  
+  .total {
+  background-color: #B7B7A4;
+  height: 150px;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  
+  }
+  
+  .button {
+    background-color: #D9D9D9;
+    border: none;
+    color: rgb(87, 85, 85);
+    padding: 8px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px ;
+    opacity: 1;
+    transition: 0.3s;
+    width: 250px;
+    border-radius: 10px;
+  
+  }
+
+
+
+  .total_contenu{
+    display: flex;
+  flex-direction: wrap;
+  justify-content: space-between;
+  font-size: 20px;
+  }
+  
+.total_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+}
+
+:disabled{
+  color: #a7a6a6;
+}
+ 
+
+/*__________page panier avec articles____*/
+
+.articles img {
+  width: 151px;
+  height: 214px;
+  margin-right: 50px;
+  }
+  
+  
+  .description {
+    padding: 10px;
+    }
+  
+  .articles {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px;
+   
+  }
+  
+  .article_1, .article_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  input{
+    width:12px;
+    border: none;
+    padding: 12px;
+    background-color: white;
+  }
+  
+  .prix{
+    margin-left:30px;
+  }
+  .quantite {
+      margin: 50px;
+      width: 12px;
+      margin-left: 62px;
+  }
+
+  
+  .fiche_panier {
+    display: flex;
+    flex-direction: row;
+  align-items: center;
+  
+  }
+
+  .prix_panier{
+display: flex;
+flex-direction: row;
+align-items: center;
+  }
+
+  #header_contact {
+    width: 100%;
+    background-color: #CB997E;
+  
+  }
+  
+  
+  .body_contact {
+    margin: 0;
+    padding: 0;
+    background-color: #CB997E;
+  }
+  
+  
+  #titre_contact {
+    text-align: center;
+    font-size: 32px;
+  
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* padding contenant */
+  .container_contact {
+    padding: 16px;
+    background-color:  #C7815C;
+    ;
+    border-radius: 10px;
+    justify-content: center;
+    margin: 10% 10%;
+  }
+  
+  /* largeurs des champs*/
+  input[type=text],
+  input[type=message],
+  input[type=tel],
+  input[type=email]
+  /*input[type=date],
+  input[type=number]*/ {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: white;
+    border-radius: 10px;
+  }
+  
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid white;
+    margin-bottom: 25px;
+  }
+  
+  /* bouton valider */
+  .registerbtn {
+    background-color: #A76F51;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  
+  
+  
+  
+  
+  
+  /*-----------------------MAP----------------*/
+
+  .bannierecontact {
+
+    background-image:url("../../images/header_contact.jpg");
+     height: 230px;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+ 
+    height: 300px;
+    justify-content: center;
+    width: 70%;
+    margin-left: 19%;
+  
+  }
+  
+  .text {
+    padding: 20px;
+    background-color:#C7815C;
+    color: black;
+    font-size: 1em;
+    width: 50%;
+    height: 350px;
+    text-align: center;
+    
+   
+  }
+  
+  
+  .map {
+    width: 50%;
+    border-radius: 0 20px 20px 0;
+  }
+
+  .main_contact {
+  height: 1320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  form {
+    width: 710px;
+  }
+
+
+
+
+/*__________version mobile______*/
+@media only screen and (max-width : 767px) {
+
+
+header {
+  width: 100%;
+  background-color: #B7B7A4;
+
+}
+
+
+.iconify {
+
+  margin-left: 10px;
+}
+
+
+/*barre de navigation*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /*positionne la barre de navigation en haut à gauche de la page*/
+    z-index: 1;
+    /*positionnée au-dessus des autres éléments de la page*/
+    top: 0;
+    left: 0;
+    background-color: #a5a58df8;
+    overflow-x: hidden;
+    /* ne sera pas défilable horizontalement*/
+    transition: 0.5s;
+    /*temps douvrture et de fermeture*/
+    padding-top: 100px;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 48px;
+    color: white;
+  }
+  .sidenav a {
+    padding: 8px 8px 30px 32px;
+    text-decoration: none;
+    font-family: 'Italiana', serif;
+    font-size: 25px;
+    color: white;
+    display: block;
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #9e3434;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+.copyright {
+background-color: #6B705C;
+height: 40%;
+margin-bottom: 0;
+color: white;
+text-align: center;
+padding: 73px;
+height: 182px;
+margin: -26px;
+}
+
+
+.reseaux {
+display:flex;
+justify-content: center;
 
  }
  
@@ -252,7 +623,7 @@ footer {
   padding: 100px;
 }
 
-/*-----------------------------------------------------------------------PAGE CONTACT-----------------------------------------*/
+/*------------------------------------------------------------PAGE CONTACT-----------------------------------------*/
 
 #header_contact {
   width: 100%;
@@ -336,24 +707,26 @@ hr {
 .container {
   display: flex;
   flex-direction: row;
-  margin: 10%;
+  margin: 10px;
   height: 300px;
 
 }
 
 .text {
-  flex-basis: 50%;
-  padding-right: 20px;
+  padding: 20px;
   background-color:#C7815C;
   color: black;
-  font-size: 2em;
-  width: 400px;
+  font-size: 1em;
+  width: 50%;
+  height: 350px;
+  text-align: center;
+  
  
 }
 
 
 .map {
-  flex-basis: 50%;
+  width: 50%;
   border-radius: 0 20px 20px 0;
 }
 
@@ -373,14 +746,11 @@ font-size: 30px;
   gap: 10px;
   height: 100%;
   margin-bottom: 30px;
-<<<<<<< HEAD
-=======
   
 }
 
 a {
   color: black;
->>>>>>> 5a5ee88 (version 4)
 }
 
 
@@ -388,11 +758,7 @@ a {
 
 .total {
 background-color: #B7B7A4;
-<<<<<<< HEAD
-height: 100px;
-=======
 height: 150px;
->>>>>>> 5a5ee88 (version 4)
 margin-bottom: 0;
 display: flex;
 flex-direction: column;
@@ -423,11 +789,6 @@ justify-content: space-between;
 font-size: 20px;
 }
 
-<<<<<<< HEAD
-.total_btn {
-}
-=======
->>>>>>> 5a5ee88 (version 4)
 
 .footer {
   display: flex;
@@ -474,11 +835,6 @@ height: 214px;
 
 .article_1, .article_2 {
   display: flex;
-<<<<<<< HEAD
-
-}
-
-=======
 }
 
 input{
@@ -494,5 +850,12 @@ input{
   margin-top: 50px;
 }
 
+.fiche_panier{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  width: 86px;
 }
->>>>>>> 5a5ee88 (version 4)
+
+
+}
