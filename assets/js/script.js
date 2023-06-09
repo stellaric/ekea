@@ -29,7 +29,7 @@ window.onclick = function(event) {
 
 /*--------------filtre---------*/
 
-filterSelection("all")
+/*filterSelection("all")
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
@@ -70,4 +70,65 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
+}*/
+
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  for (i = 0; i < x.length; i++) {
+      if (c === "" || c === "all") {
+          x[i].style.display = "block";
+      } else if (x[i].classList.contains(c)) {
+          x[i].style.display = "block";
+      } else {
+          x[i].style.display = "none";
+      }
+  }
 }
+
+
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+  });
+}
+
+
+
+
+
+
+
+
+
+/*___________________REGEX_______*/
+
+/*let myForm = document.getElementById('myForm');
+
+
+myForm.addEventListener('submit', function(e) {
+let myInput = document.getElementById('fname');
+let myRegex = /^[a-zA-Z-\s]+$/;
+
+if (myInput.value.trim() === "") {
+   let myError = document.getElementById('error');
+    myError.innerHTML = "Le champs prénom est requis.";
+   myError.style.color ='red';
+    e.preventDefault();
+}
+
+else if(myRegex.test(myInput.value) === false ) {
+  let myError = document.getElementById('error');
+  myError.innerHTML = " Le prénom doit comporter des lettres des tirest uniquements.";
+ myError.style.color ='red';
+ e.preventDefault();
+}
+
+});*/
+
+
+/*________page prduits______*/

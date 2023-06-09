@@ -46,7 +46,7 @@ header {
     padding: 8px 8px 30px 32px;
     text-decoration: none;
     font-family: 'Italiana', serif;
-    font-size: 25px;
+    font-size: 40px;
     color: white;
     display: block;
     text-align: center;
@@ -67,13 +67,12 @@ header {
 
 .copyright {
 background-color: #6B705C;
-height: 40%;
-margin-bottom: 0;
 color: white;
 text-align: center;
 padding: 73px;
 height: 182px;
-margin: -26px;
+margin-top : 437px;
+font-size: 20px;
 }
 
 
@@ -113,6 +112,225 @@ a#logo {
 }
 
 
+/*_____________Produits__________*/
+
+.banniere_produits {
+
+  background-image:url("../../images/header_produit.jpeg");
+   height: 230px;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+
+
+.dropbtn {
+  background-color: #A5A58D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 230px;
+ 
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #A5A58D;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 230px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+
+
+
+/* modal  */
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/*-----------filter------------------*/
+
+.filterDiv {
+  float: left;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.main_produits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 837px;
+}
+
+
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+
+.container_produits {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+
+  
+}
+
+.container_produits img {
+  width: 250px;
+  height: 200px;
+}
+
+
+
+.confort, .surface, .deco {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.titre_prod {
+  text-align: center;
+}
+
+
+
 
 
 
@@ -131,6 +349,11 @@ a#logo {
     gap: 10px;
     height: 100%;
     margin-bottom: 30px;
+    
+  }
+
+  .main_panier_vide {
+
     
   }
 
@@ -222,6 +445,13 @@ a#logo {
     justify-content: space-evenly;
     align-items: center;
   }
+
+  form {
+    flex-direction: column;
+    width: 710px;
+    display: flex;
+  }
+  
   
   input{
     width:12px;
@@ -253,12 +483,16 @@ flex-direction: row;
 align-items: center;
   }
 
+
+  /*______contact_____________*/
+
   #header_contact {
     width: 100%;
     background-color: #CB997E;
   
   }
   
+
   
   .body_contact {
     margin: 0;
@@ -303,6 +537,12 @@ align-items: center;
     border-radius: 10px;
   }
   
+  .message {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
   
   /* Overwrite default styles of hr */
   hr {
@@ -490,6 +730,9 @@ justify-content: center;
   background-repeat: no-repeat;
 }
 
+/*____________________PRODUITS__________________*/
+
+
 /*------------DROPDOWN-------------------------*/
 .dropbtn {
   background-color: #A5A58D;
@@ -554,15 +797,15 @@ justify-content: center;
   display: block;
 }
 
-.container {
+.container_produits {
   margin-top: 20px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-
+  height: 723px;
 }
 
-.container img {
+.container_produits img {
   width: 250px;
   height: 200px;
 }
@@ -579,12 +822,12 @@ justify-content: center;
   justify-content: space-around;
 }
 
-.deco{
+.deco {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
 }
+
 /* Style the buttons */
 .btn {
   border: none;
@@ -623,7 +866,12 @@ footer {
   padding: 100px;
 }
 
-/*------------------------------------------------------------PAGE CONTACT-----------------------------------------*/
+
+
+
+
+
+/*------------------------------------------------------PAGE CONTACT-----------------------------------------*/
 
 #header_contact {
   width: 100%;
@@ -643,6 +891,10 @@ footer {
   text-align: center;
   font-size: 32px;
 
+}
+
+.formulaire{
+  width: 444px;
 }
 
 * {
@@ -673,6 +925,11 @@ input[type=number]*/ {
   border: none;
   background: white;
   border-radius: 10px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -816,6 +1073,7 @@ a#logo {
 .articles img {
 width: 151px;
 height: 214px;
+margin-right: 0;
 }
 
 
@@ -834,6 +1092,16 @@ height: 214px;
 }
 
 .article_1, .article_2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 350px;
+}
+
+
+form {
+  flex-direction: column;
+  width: 710px;
   display: flex;
 }
 

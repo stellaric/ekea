@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/script.js"></script>
+  <title>E-kea</title>
+</head>
+
+<body>
+ 
+    <header>
+
+       <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!-- lien symbole de croix  configurée pr que lorsqu'on clique dessus, il ne se passe rien -->
+            <h2>e.kea</h2>
+            <a href="index.hmtl">Accueil</a>
+            <a href="vues/vue-inspiration.html">Inspirations</a>
+            <a href="vues/produit.html">Produits</a>
+            <a href="vues/vues-services.html">Nos services</a>
+            <a href="vues/contact.html">Nous contacter</a>
+
+
+            <div class="reseaux">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!-- lien symbole de croix  configurée pr que lorsqu'on clique dessus, il ne se passe rien -->
+            <a href="#"><span class="iconify" data-icon="iconoir:instagram" style="color: white;"></span></a>
+            <a href="#"><span class="iconify" data-icon="eva:facebook-outline" style="color: white;"></span></a>
+            <a href="#"><span class="iconify" data-icon="basil:twitter-outline" style="color: white;"></span></a>
+            </div>
+            <div class="copyright">
+                <p>Copyright-Jade Stella</p>
+            </div>
+          </div>
+            <div class="navbar">
+            <span class="iconify" data-icon="fontisto:nav-icon-a" style="color: black;" data-width="40" data-height="38.58" onclick="openNav()"></span>
+            <h1>e.kea</h1>
+            <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="45" data-height="38.58"></span>  
+            </div>
+        </div>
+       
+  </header>
+
+  <main>
+    <h3>Panier</h3>
+
+    <div class="panier">
+        <a href="#">Continuer vos achats >></a>
+    </div>
+
+    <div class="articles">
+     <div class="article_1">
+      <div class="fiche_panier">
+        <img src="images/confort_1.jpeg" alt="">
+    <div class="description">
+      <p> Fauteuil Supra</p>
+    </div>
+  </div>
+
+<div class="prix_panier">
+    <div class="quantite">
+      <form>
+        <input id="plus" type="button"><span class="iconify" data-icon="iconamoon:arrow-up-2-duotone"></span></input>
+          <input id ="result" type="texte" value="5" maxlength="2" />
+        
+          <input id="moins" type="button" ><span class="iconify" data-icon="iconamoon:arrow-up-2-duotone" data-rotate="180deg"></span></input>
+          </form>
+    </div>
+     <div class="prix"><p>100€</p></div>
+    </div>
+    </div>
+
+
+
+
+
+<!---
+     <div class="article_2">
+        <img src="images/surface-1.jpeg" alt="" style="width: 138px; height: 135px;">
+        <div class="description">
+        <div class="nom_produit">Bureau Demb<br>ourabah</div>
+     </div>
+
+     <div class="quantite">
+      <form>
+      <input id="plus" type="button" value="+" />
+        <input id ="result" type="texte" value="5" maxlength="2" />
+      
+        <input id="moins" type="button" value="-" />
+        </form>
+    </div>
+
+    <div class="prix"><p>100€</p></div>
+     </div>
+   
+  -->
+</div>
+    <div class="total">
+      <div class="total_contenu">
+      <p>Total</p> 
+      <span class="iconify" data-icon="ic:baseline-euro" style="color: black;"  data-width="40" data-height="38.58"></span>
+      </div>
+
+      <div class="total_btn">
+      <button class="button">Valider le panier</button>
+      </div>
+    </div>
+    
+  </main>
+  <footer>
+    <div class="footer">
+      <a href="#" id="logo">e.kea</a>
+      <p>Nous Contacter</p>
+    </div>
+  </footer>
+</body>
+
+</html>

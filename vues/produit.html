@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/script.js"></script>
+  <title>E-kea</title>
+</head>
+
+<body>
+ 
+    <header>
+
+       <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!-- lien symbole de croix  configurée pr que lorsqu'on clique dessus, il ne se passe rien -->
+            <h2>e.kea</h2>
+            <a href="index.hmtl">Accueil</a>
+            <a href="vues/vue-inspiration.html">Inspirations</a>
+            <a href="vues/produit.html">Produits</a>
+            <a href="vues/vues-services.html">Nos services</a>
+            <a href="vues/contact.html">Nous contacter</a>
+
+            <div class="reseaux">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!-- lien symbole de croix  configurée pr que lorsqu'on clique dessus, il ne se passe rien -->
+            <a href="#"><span class="iconify" data-icon="iconoir:instagram" style="color: white;"></span></a>
+            <a href="#"><span class="iconify" data-icon="eva:facebook-outline" style="color: white;"></span></a>
+            <a href="#"><span class="iconify" data-icon="basil:twitter-outline" style="color: white;"></span></a>
+            </div>
+            <div class="copyright">
+                <p>Copyright-Jade Stella</p>
+            </div>
+          </div>
+            <div class="navbar">
+            <span class="iconify" data-icon="fontisto:nav-icon-a" style="color: black;" data-width="45" data-height="38.58" onclick="openNav()"></span>
+            <h1>e.kea</h1>
+            <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="45" data-height="38.58"></span>  
+            </div>
+        </div>
+        <div class="banniere_produits">
+        
+        </div>
+  </header>
+
+  <main>
+    <div class="main_produits">
+      <h3>Produits</h3>
+  
+      <div class="dropdown" id="myBtnContainer">
+          <button onclick="myFunction()" class="dropbtn">Filtre</button>
+          <div id="myDropdown" class="dropdown-content">
+              <a href="#" class="btn active" onclick="filterSelection('all')">Tous</a>
+              <a href="#about" class="btn" onclick="filterSelection('confort')">Confort</a>
+              <a href="#contact" class="btn" onclick="filterSelection('surface')">Surface</a>
+              <a href="#contact" class="btn" onclick="filterSelection('decoration')">Décoration</a>
+          </div>
+      </div>
+  
+      <div class="container_produits">
+          <div class="filterDiv confort">
+              <div class="titre_prod">
+                  <h4>Confort</h4>
+              </div>
+              <div class="confort">
+                  <img id="myImg" src="../images/confort_1.jpeg" alt="" />
+                  <img src="../images/img2.jpeg" alt="" />
+              </div>
+          </div>
+  
+          <div class="filterDiv surface">
+              <div class="titre_prod">
+                  <h4>Surface</h4>
+              </div>
+              <div class="surface">
+                  <img src="../images/surface-1.jpeg" alt="" />
+                  <img src="../images/surface-2.jpeg" alt="" />
+              </div>
+          </div>
+  
+          <div class="filterDiv decoration">
+              <div class="titre_prod">
+                  <h4>Décoration</h4>
+              </div>
+              <div class="decoration">
+                  <img src="../images/deco-1.jpeg" alt="" />
+                  <img src="../images/deco-2.jpeg" alt="" />
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+    <!--
+    <div class="main_produits">
+    <h3>Produits</h3>
+
+    <div class="dropdown"  id="myBtnContainer">
+      <button onclick="myFunction()" class="dropbtn">Filtre</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#" class="btn active" onclick="filterSelection('all')" >Tous</button>
+        <a href="#about" class="btn" onclick="filterSelection('confort')">Confort </a>
+        <a href="#contact" class="btn" onclick="filterSelection('surface')">Surface</a>
+        <a href="#contact" class="btn"  onclick="filterSelection('decoration')">Décoration</a>
+      </div>
+    </div>
+
+
+    <div class="container_produits">
+    
+
+   <div class="filterDiv confort">
+      <div class="titre_prod">
+      <h4>Confort</h4>
+      </div>
+      <div class="confort">
+       
+       <img id="myImg" src="../images/confort_1.jpeg" alt=""  />
+        <img src="../images/img2.jpeg" alt=""/>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <span class="close">×</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+
+    <div class="filterDiv surface">
+      <div class="titre_prod">
+          <h4>Surface</h4>
+          </div>
+   
+      <div class="surface">
+ 
+       <img src="../images/surface-1.jpeg" alt=""/>
+
+
+       
+        <img src="../images/surface-2.jpeg" alt=""/>
+      </div>
+    </div>
+
+    <div class="filterDiv decoration">
+      <div class="titre_prod">
+          <h4>Decoration</h4>
+          </div>
+     
+    <div class="deco">
+      
+      <img src="../images/deco-1.jpeg" alt=""/>
+      <img src="../images/deco-2.jpeg" alt=""/>
+      
+    </div>
+  </div>
+
+ 
+ </div>
+
+    </div>-->
+  </main>
+  <footer>
+    <div class="footer">
+      <a href="#" id="logo">e.kea</a>
+      <p>Nous Contacter</p>
+    </div>
+  </footer>
+</body>
+
+</html>
