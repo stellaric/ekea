@@ -113,3 +113,13 @@ const slideCount = carousel.children.length;
 
 carousel.style.width = `${slideWidth * slideCount}px`;
 
+// tabs
+function selectTab(tabIndex) {
+  //Hide All Tabs
+  document.getElementById('tab1contenu').style.display = "none";
+  document.getElementById('tab2contenu').style.display = "none";
+
+  //Show the Selected Tab
+  document.getElementById('tab' + tabIndex + 'contenu').style.display = "block";
+
+}

@@ -9,54 +9,93 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="../assets/js/script.js"></script>
   <title>E.kea</title>
 </head>
 
+
 <body>
+
   <header>
-    <!--navbar-->
-    <div id="mySidenav" class="sidenav" style="background-color: #CB997E;">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <!-- lien symbole de croix  configurée pr que lorsqu'on clique dessus, il ne se passe rien -->
-      <h2>e.kea</h2>
-      <a href="../index.html">Accueil</a>
-      <a href="vue-inspiration.html">Inspirations</a>
-      <a href="vue-produits.html">Produits</a>
-      <a href="vue-services.html">Nos Services</a>
-      <a href="vue-contacter.html">Nous Contacter</a>
-
-      <div class="reseaux">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <!-- lien symbole de croix  configurée pr que lorsqu'on clique dessus, il ne se passe rien -->
-        <a href="#"><span class="iconify" data-icon="iconoir:instagram" style="color: white;"></span></a>
-        <a href="#"><span class="iconify" data-icon="eva:facebook-outline" style="color: white;"></span></a>
-        <a href="#"><span class="iconify" data-icon="basil:twitter-outline" style="color: white;"></span></a>
+    <!--Carrousel -->
+    <div class="contener_slideshow">
+      <div class="contener_slide">
+        <div class="slid_1">
+          <img src="../images/carte.jpg" alt="img-1" />
+        </div>
+        <div class="slid_2">
+          <img src="../images/header_contact.jpeg" alt="img-2" />
+        </div>
+        <div class="slid_3">
+          <img src="../images/carte.jpg" alt="img-3" />
+        </div>
       </div>
-      <div class="copyright">
-        <p>Copyright-Jade Stella</p>
-      </div>
-    </div>
-
-    <div class="navbar" style="background-color: #CB997E;">
-      <span class="iconify" data-icon="fontisto:nav-icon-a" style="color: black;margin-left:12px;" data-width="45"
-        data-height="38.58" onclick="openNav()"></span>
-      <h1>e.kea</h1>
-      <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;margin-right:12px;"
-        data-width="45" data-height="38.58"></span>
-    </div>
-    </div>
-    <div id="header_inspiration">
     </div>
   </header>
 
   <main>
-    <section id="section_service">
-      <h2>Nos Services</h2>
+    <div id="main_service">
+      <section id="titre_service">
+        <h2>Nos Services</h2>
+      </section>
+      <section class="tab_service">
+        <div id="tab_titre">
+          <div id="tab1" onclick="selectTab(1)">
+            Nos services de livraison
+          </div>
+          <div id="tab2" onclick="selectTab(2);">
+            Nos modes de paiement
+          </div>
+        </div>
+        <div class="tab_contenu">
+          <div id="tab1contenu">
 
-    </section>
+            <h5>Petit colis : </h5>
+            <p>Chronopost
+              <br>(articles de moins de 12,5kg)
+              <br>9.90 €
+            </p>
+            
+            <h5>Livraison domicile par <br> transporteur :</h5>
+             <p>
+            39€ pour un achat inférieur à 400€ <br>
+            59€ pour un achat supérieur à 400€ et inférieur à 1000€
+           <br>109€ pour un achat supérieur à 1000€
+            </p>
+            <img src="../images/img-services.jpeg" alt="img-service" width="320px" height="320px" />
+          </div>
+          
+          <div id="tab2contenu">
+            <h4>Paiement par carte bancaire </h4>
+            <div class="icon_card">
+              <span class="iconify" data-icon="ion:card" style="width:83px; height:94px;"></span>
+              <span class="iconify" data-icon="ion:card-outline" style="width:83px; height:94px;" ></span>
+              <span class="iconify" data-icon="basil:card-outline" style="width:83px; height:94px;" ></span>
+              </div>
+
+            <h4>Paiement par Paypal </h4>
+            <span class="iconify" data-icon="uit:paypal" style="width:83px; height:94px;" ></span>
+            
+            <h4>Paiement 4 x sans frais  </h4>
+            <div id="bg_border">
+              <p>4x Sans Frais par CB</p>
+            </div>
+     <img src="../images/img-services.jpeg" alt="img-service" width="320px" height="320px" />
+            
+          </div>
+          
+        </div>
+      </section>
+    </div>
   </main>
-  <footer></footer>
-  <script src="../assets/js/script.js"></script>
+
+  <!--------->
+  <footer>
+    <div class="footer">
+      <a href="../index.html" id="logo">e.kea</a>
+      <p>Nous Contacter</p>
+    </div>
+  </footer>
 
 </body>
 

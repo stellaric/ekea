@@ -463,14 +463,14 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
   }
 
   .main_loader {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 480px;
+    height: 300px;
 
   }
 
@@ -484,10 +484,16 @@ body {
     margin: -76px 0 0 -76px;
     border: 16px solid #B7B7A4;
     border-radius: 50%;
-    border-top: 16px solid #0a0a0a;
+    border-top: 10px solid #0a0a0a;
     animation: spin 2s linear infinite;
   }
 
+  #loader_txt {
+    font-size: x-large;
+    text-align: center;
+    /* width: 27px; */
+    margin-bottom: 87px;
+  }
 
   @keyframes spin {
     0% {
@@ -517,5 +523,93 @@ body {
       bottom: 0;
       opacity: 1
     }
+  }
+
+
+  /*____________________ page services_____________________________*/
+  #main_service {
+    display: flex;
+    flex-direction: column;
+    background-color: #CB997E;
+    height: 1000px;
+  }
+
+  #titre_service h2 {
+    text-align: center;
+    padding:20px;
+  }
+
+  .tab_service {
+    background-color: #C7815C;
+    width: 320px;
+    margin-left: 36px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center
+  }
+
+  #tab1contenu h5 {
+    font-weight: bold;
+  }
+
+
+  #tab1_contenu {
+    text-align: center;
+  }
+
+  #tab_titre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+  }
+
+  #tab1,
+  #tab2 {
+    padding: 35px;
+    text-align: center;
+
+  }
+
+  #tab1:hover,
+  #tab2:hover {
+background: rgba(180, 114, 79, 0.94);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+;
+  }
+
+  .tab_contenu {
+    height: 605px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align:center
+  }
+
+  .tab_contenu img{
+    object-fit:cover;
+  }
+  
+  #tab1_contenu {
+    display: block;
+    text-align: center;
+  }
+
+  #tab2_contenu {
+    display: none;
+
+  }
+
+  #bg_border p {
+    box-sizing: border-box;
+
+
+width: 189px;
+height: 154px;
+
+background: #DDB892;
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
