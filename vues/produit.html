@@ -66,18 +66,22 @@
                   <h4>Confort</h4>
               </div>
               <div class="confort">
-                  <img id="myImg" src="../images/confort_1.jpeg" alt="" />
-                  <img src="../images/img2.jpeg" alt="" />
+                  <img  src="../images/confort_1.jpeg" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" />
+                  <img src="../images/img2.jpeg" alt="" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"/>
               </div>
           </div>
+
+
+
+
   
           <div class="filterDiv surface">
               <div class="titre_prod">
                   <h4>Surface</h4>
               </div>
               <div class="surface">
-                  <img src="../images/surface-1.jpeg" alt="" />
-                  <img src="../images/surface-2.jpeg" alt="" />
+                  <img src="../images/surface-1.jpeg" alt="" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"/>
+                  <img src="../images/surface-2.jpeg" alt="" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"/>
               </div>
           </div>
   
@@ -86,80 +90,173 @@
                   <h4>Décoration</h4>
               </div>
               <div class="decoration">
-                  <img src="../images/deco-1.jpeg" alt="" />
-                  <img src="../images/deco-2.jpeg" alt="" />
+                  <img src="../images/deco-1.jpeg" alt="" onclick="openModal();currentSlide(5)" class="hover-shadow cursor" />
+                  <img src="../images/deco-2.jpeg" alt="" onclick="openModal();currentSlide(6)" class="hover-shadow cursor" />
               </div>
           </div>
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="mySlides">
+                <div class="container_articles">
+                  <img class="images_produits" src="../images/confort_1.jpeg" style="width: 600px;" style="height: 768px;"   alt= "Image">
+                  <div class="text_produit">
+                    <p>Fauteuil Supra </p>
+              
+                    <p>Fauteuil design en bois et tissu<br>
+                      Dimension et poids :<br>
+                      Profondeur 80 cm <br>
+                      Hauteur 79 cm<br>
+                      Longueur 65 cm</p>
+              
+              
+                    <p>Prix : 100 euros </p>
+              
+                    <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="60"
+                      data-height="58.58"></span>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="mySlides">
+                <div class="container_articles">
+                  <img class="images_produits" src="../images/img2.jpeg" alt=" Image">
+                  <div class="text_produit">
+                    <p>Fauteuil Dhiarry </p>
+              
+                    <p>Fauteuil design en bois et tissu <br>
+                      Dimension et poids : <br>
+                      Profondeur 80 cm <br>
+                      Hauteur 79 cm<br>
+                      Longueur 85 cm</p>
+              
+              
+                    <p> Prix : 200 euros </p>
+              
+              
+                    <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="60"
+                      data-height="58.58"></span>
+                  </div>
+                </div>
+              
+              </div>
+          
+              <div class="mySlides">
+          
+                <div class="container_articles">
+                  <img class="images_produits" src="../images/surface-1.jpeg" alt=" Image">
+                  <div class="text_produit">
+                    <p>Bureau Dembourabah</p>
+              
+                    <p>Bureau moderne en bois
+              
+                      <br>
+                      Dimension et poids : <br>
+                      Profondeur 80 cm <br>
+                      Hauteur 79 cm<br>
+                      Longueur 85 cm
+                    </p>
+              
+              
+                    <p> Prix : 200 euros </p>
+              
+              
+                    <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="60"
+                      data-height="58.58"></span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mySlides">
+             
+                <div class="container_articles">
+                  <img class="images_produits" src="../images/surface-2.jpeg" alt=" Image">
+                  <div class="text_produit">
+                    <p>Table Xavitina</p>
+              
+                    <p>
+                      Table industrielle en bois
+                      <br>
+                      Dimension et poids : <br>
+                      Profondeur 80 cm <br>
+                      Hauteur 79 cm<br>
+                      Longueur 85 cm
+                    </p>
+              
+              
+                    <p> Prix : 200 euros </p>
+              
+              
+                    <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="60"
+                      data-height="58.58"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mySlides">
+        
+              <div class="container_articles">
+                <img class="images_produits" src="../images/deco-1.jpeg" alt=" Image">
+                <div class="text_produit">
+                  <p>Pot Marcaaron</p>
+            
+                  <p>
+                    Pots en bois
+                    <br>
+                    Dimension et poids : <br>
+                    Profondeur 80 cm <br>
+                    Hauteur 79 cm<br>
+                    Longueur 85 cm
+                  </p>
+            
+            
+                  <p> Prix : 50 euros </p>
+            
+            
+                  <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="60"
+                    data-height="58.58"></span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="mySlides">
+        
+              <div class="container_articles">
+                <img class="images_produits" src="../images/deco-2.jpeg" alt=" Image">
+                <div class="text_produit">
+                  <p>Miroir Davimartinio</p>
+            
+                  <p>
+                    Miroir
+                    <br>
+                    Dimension et poids : <br>
+                    Hauteur 79 cm<br>
+                    Longueur 85 cm
+                  </p>
+            
+            
+                  <p> Prix : 90 euros </p>
+            
+            
+                  <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="60"
+                    data-height="58.58"></span>
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+
+
+        
       </div>
-  </div>
 
-
-    <!--
-    <div class="main_produits">
-    <h3>Produits</h3>
-
-    <div class="dropdown"  id="myBtnContainer">
-      <button onclick="myFunction()" class="dropbtn">Filtre</button>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="#" class="btn active" onclick="filterSelection('all')" >Tous</button>
-        <a href="#about" class="btn" onclick="filterSelection('confort')">Confort </a>
-        <a href="#contact" class="btn" onclick="filterSelection('surface')">Surface</a>
-        <a href="#contact" class="btn"  onclick="filterSelection('decoration')">Décoration</a>
-      </div>
-    </div>
-
-
-    <div class="container_produits">
     
 
-   <div class="filterDiv confort">
-      <div class="titre_prod">
-      <h4>Confort</h4>
-      </div>
-      <div class="confort">
-       
-       <img id="myImg" src="../images/confort_1.jpeg" alt=""  />
-        <img src="../images/img2.jpeg" alt=""/>
-      </div>
-    </div>
-    <div id="myModal" class="modal">
-      <span class="close">×</span>
-      <img class="modal-content" id="img01">
-      <div id="caption"></div>
-    </div>
-
-    <div class="filterDiv surface">
-      <div class="titre_prod">
-          <h4>Surface</h4>
-          </div>
-   
-      <div class="surface">
- 
-       <img src="../images/surface-1.jpeg" alt=""/>
-
-
-       
-        <img src="../images/surface-2.jpeg" alt=""/>
-      </div>
-    </div>
-
-    <div class="filterDiv decoration">
-      <div class="titre_prod">
-          <h4>Decoration</h4>
-          </div>
-     
-    <div class="deco">
-      
-      <img src="../images/deco-1.jpeg" alt=""/>
-      <img src="../images/deco-2.jpeg" alt=""/>
-      
-    </div>
-  </div>
-
- 
- </div>
-
-    </div>-->
   </main>
   <footer>
     <div class="footer">
