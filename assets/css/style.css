@@ -266,22 +266,25 @@ img.hover-shadow {
   height: 768px;
 }
 
-/*.images_produits {
-  width: 600px;
+#myModal img {
+  width: 50%;
   margin-right: 20px;
-height:768px ;
-}*/
-
-
-
-.text_produits {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 20px;
-  padding: 10px;
+height:100%;
+object-fit: cover;
 }
+
+
+.text_produit {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 40%;
+    height: 80%;
+}
+
 
 .icon {
   margin-left: 10px;
@@ -289,14 +292,10 @@ height:768px ;
 }
 
 
-.container_produits img  {
-  width: 600px;
-  margin-right: 20px;
-height:768px ;
-
+.form {
+display: flex;
+  flex-direction: column;
 }
-
-
 
 
 
@@ -310,7 +309,6 @@ height:768px ;
 /*-----------filter------------------*/
 
 .filterDiv {
-  float: left;
   width: 100px;
   line-height: 100px;
   text-align: center;
@@ -361,8 +359,7 @@ height:768px ;
 }
 
 .container_produits img {
-  width: 250px;
-  height: 200px;
+  object-fit: cover;
 }
 
 
@@ -379,6 +376,15 @@ height:768px ;
 }
 
 
+.btn_ajout {
+  font-size: 35px;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #B7B7A4;
+}
 
 
 
@@ -401,11 +407,7 @@ height:768px ;
     
   }
 
-  .main_panier_vide {
-
-    
-  }
-
+ 
   
 #achats{
   display: flex;
@@ -495,7 +497,7 @@ height:768px ;
     align-items: center;
   }
 
-  form {
+  .quantite_art {
     flex-direction: column;
     width: 710px;
     display: flex;
@@ -667,7 +669,7 @@ align-items: center;
   align-items: center;
   }
 
-  form {
+  .formulaire{
     width: 710px;
   }
 
@@ -833,30 +835,23 @@ justify-content: center;
 
 /*-----------filter------------------*/
 
-.filterDiv {
-  float: left;
-  width: 100px;
-  line-height: 100px;
-  text-align: center;
-  margin: 2px;
-  display: none;
-}
 
-.show {
-  display: block;
-}
 
 .container_produits {
+ 
   margin-top: 20px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 723px;
+  height: 100%;
+}
+
+.confort img, .surface img, .decoration img{
+  width: 100%;
 }
 
 .container_produits img {
-  width: 250px;
-  height: 200px;
+  width: 100%;
 }
 
 .confort{
@@ -868,13 +863,9 @@ justify-content: center;
 .surface{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-}
-
-.deco {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: nowrap;
+  background-color: #999;
+  width: 100%;
 }
 
 /* Style the buttons */
@@ -894,6 +885,15 @@ justify-content: center;
   background-color: #666;
   color: white;
 }
+
+.section_confort {
+
+display: flex;
+flex-direction: row;
+
+}
+
+
 
 
 

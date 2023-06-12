@@ -61,20 +61,19 @@
       </div>
   
       <div class="container_produits">
+        <div class="section_confort">
           <div class="filterDiv confort">
               <div class="titre_prod">
                   <h4>Confort</h4>
               </div>
               <div class="confort">
-                  <img  src="../images/confort_1.jpeg" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" />
+                  <img src="../images/confort_1.jpeg" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" />
                   <img src="../images/img2.jpeg" alt="" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"/>
               </div>
           </div>
+        </div>
 
-
-
-
-  
+        <div class="section_surface">
           <div class="filterDiv surface">
               <div class="titre_prod">
                   <h4>Surface</h4>
@@ -84,7 +83,10 @@
                   <img src="../images/surface-2.jpeg" alt="" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"/>
               </div>
           </div>
-  
+        </div>
+
+
+        <div class="section_deco">
           <div class="filterDiv decoration">
               <div class="titre_prod">
                   <h4>Décoration</h4>
@@ -94,17 +96,27 @@
                   <img src="../images/deco-2.jpeg" alt="" onclick="openModal();currentSlide(6)" class="hover-shadow cursor" />
               </div>
           </div>
+        </div>
+      </div>
+
+
+
+
+
+<!--_____________MODAL______________-->        
+
+
           <div id="myModal" class="modal">
             <span class="close cursor" onclick="closeModal()">&times;</span>
             <div class="modal-content">
           
               <div class="mySlides">
                 <div class="container_articles">
-                  <img class="images_produits" src="../images/confort_1.jpeg" style="width: 600px;" style="height: 768px;"   alt= "Image">
+                  <img  src="../images/confort_1.jpeg"   alt= "Image">
                   <div class="text_produit">
                     <p>Fauteuil Supra </p>
               
-                    <p>Fauteuil design en bois et tissu<br>
+                    <p>Fauteuil design en bois et tissu<br><br>
                       Dimension et poids :<br>
                       Profondeur 80 cm <br>
                       Hauteur 79 cm<br>
@@ -112,9 +124,14 @@
               
               
                     <p>Prix : 100 euros </p>
-              
-                    <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="60"
-                      data-height="58.58"></span>
+                    <form method="get" action="panier.html">
+                      <button class="btn_ajout">
+                        Ajouter
+                        <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="60"
+                         data-height="58.58"></span>
+                       </button>
+                 </form>
+
                   </div>
                 </div>
               </div>
@@ -135,8 +152,13 @@
                     <p> Prix : 200 euros </p>
               
               
-                    <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="60"
-                      data-height="58.58"></span>
+                    <form method="get" action="panier.html">
+                      <button class="btn_ajout">
+                        <p>Ajouter</p>
+                        <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="60"
+                         data-height="58.58"></span>
+                       </button>
+                 </form>
                   </div>
                 </div>
               
@@ -162,8 +184,13 @@
                     <p> Prix : 200 euros </p>
               
               
-                    <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="60"
-                      data-height="58.58"></span>
+                    <form method="get" action="panier.html">
+                      <button class="btn_ajout">
+                        Ajouter
+                        <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="60"
+                         data-height="58.58"></span>
+                       </button>
+                 </form>
                   </div>
                 </div>
               </div>
@@ -188,8 +215,13 @@
                     <p> Prix : 200 euros </p>
               
               
-                    <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="60"
-                      data-height="58.58"></span>
+                    <form method="get" action="panier.html">
+                      <button class="btn_ajout">
+                        Ajouter
+                        <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="60"
+                         data-height="58.58"></span>
+                       </button>
+                 </form>
                   </div>
                 </div>
               </div>
@@ -214,8 +246,13 @@
                   <p> Prix : 50 euros </p>
             
             
-                  <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="60"
-                    data-height="58.58"></span>
+                  <form method="get" action="panier.html">
+                    <button class="btn_ajout">
+                      Ajouter
+                      <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="60"
+                       data-height="58.58"></span>
+                     </button>
+               </form>
                 </div>
               </div>
 
@@ -239,9 +276,13 @@
             
                   <p> Prix : 90 euros </p>
             
-            
-                  <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="60"
-                    data-height="58.58"></span>
+                  <form method="get" action="panier.html">
+                    <button class="btn_ajout">
+                      Ajouter
+                      <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="60"
+                       data-height="58.58"></span>
+                     </button>
+               </form>
                 </div>
               </div>
 
