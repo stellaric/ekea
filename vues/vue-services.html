@@ -6,64 +6,80 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-  <script src="../assets/js/script.js"></script>
+  
   <title>E.kea</title>
 </head>
 
 
-<body>
+<body style="background: white;">
 
-  <header>
+ <header>
+      <nav>
+        <!--navbar -->
+        <div class="navbar" style="background-color:#CB997E;">
+          <!--menu-->
+          <div class="icon_menu">
+            <span class="iconify" data-icon="fontisto:nav-icon-a" style="color: black;" data-width="40"
+              data-height="38.58" onclick="openNav()"></span>
+          </div>
+          <div class="logo">
+            <h1>e.kea</h1>
+          </div>
+          <div class="icon_panier">
+            <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="45"
+              data-height="38.58"></span>
+          </div>
+        </div>
 
+        <!--menu fullscreen-->
+        <div id="mySidenav" class="sidenav" style="background-color:#CB997E;">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="sidenav-content">
+            <div class="header-sidenav">
+              <h2>e.kea</h2>
+            </div>
+            <div class="main-sidenav">
+              <div class="lien">
+                <a href="#">Accueil</a>
+                <a href="#">Inspirations</a>
+                <a href="#">Produits</a>
+                <a href="#">Nos services</a>
+                <a href="#">Nous contacter</a>
+              </div>
+              <div class="reseaux">
+                <a href="#"><span class="iconify" data-icon="iconoir:instagram" style="color: white;"></span></a>
+                <a href="#"><span class="iconify" data-icon="eva:facebook-outline" style="color: white;"></span></a>
+                <a href="#"><span class="iconify" data-icon="basil:twitter-outline" style="color: white;"></span></a>
+              </div>
 
+            </div>
+            <div class="footer-sidenav">
+              <div class="copyright">
+                <p>Copyright-Jade Stella</p>
+              </div>
+            </div>
+
+          </div>
+        </div <!---->
+
+      </nav>
+      <!---->
+    <div class="header_carousel">
     
-    <!--navbar-->
-    <div id="mySidenav" class="sidenav" style="background-color:#CB997E;">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <!-- lien symbole de croix  configurée pr que lorsqu'on clique dessus, il ne se passe rien -->
-      <h2>e.kea</h2>
-      <a href="index.html">Accueil</a>
-      <a href="vues/vue-inspiration.html">Inspirations</a>
-      <a href="vues/vue-produits.html">Produits</a>
-      <a href="vues/vue-services.html">Nos Services</a>
-      <a href="vues/vue-contacter.html">Nous Contacter</a>
+    <!--slider -->
+    <div class="carousel">
+      <div id="slider">
 
-      <div class="reseaux">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <!-- lien symbole de croix  configurée pr que lorsqu'on clique dessus, il ne se passe rien -->
-        <a href="#"><span class="iconify" data-icon="iconoir:instagram" style="color: white;"></span></a>
-        <a href="#"><span class="iconify" data-icon="eva:facebook-outline" style="color: white;"></span></a>
-        <a href="#"><span class="iconify" data-icon="basil:twitter-outline" style="color: white;"></span></a>
-      </div>
-      <div class="copyright">
-        <p>Copyright-Jade Stella</p>
-      </div>
-    </div>
+        <div class="slide">
+          <img src="../images/header_contact.jpeg" alt="slide-1">
+        </div>
 
-    <div class="navbar" style="background-color:#CB997E;">
-      <span class="iconify" data-icon="fontisto:nav-icon-a" style="color: black;margin-left:12px;" data-width="45"
-        data-height="38.58" onclick="openNav()"></span>
-      <h1>e.kea</h1>
-      <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;margin-right:12px;"
-        data-width="45" data-height="38.58"></span>
-    </div>
-    </div>
-    <!--Carrousel -->
-    <div class="contener_slideshow">
-      <div class="contener_slide">
-        <div class="slid_1">
-          <img src="../images/carte.jpg" alt="img-1" />
+        <div class="slide">
+          <img src="../images/carte.jpg" alt="slide-2">
         </div>
-        <div class="slid_2">
-          <img src="../images/header_contact.jpeg" alt="img-2" />
-        </div>
-        <div class="slid_3">
-          <img src="../images/carte.jpg" alt="img-3" />
-        </div>
+
       </div>
+    </div>
     </div>
   </header>
 
@@ -83,7 +99,7 @@
         </div>
         <div class="tab_contenu">
           <div id="tab1contenu">
-
+<div class="ctn_1">
             <h5>Petit colis : </h5>
             <p>Chronopost
               <br>(articles de moins de 12,5kg)
@@ -97,6 +113,7 @@
            <br>109€ pour un achat supérieur à 1000€
             </p>
             <img src="../images/img-services.jpeg" alt="img-service" width="320px" height="320px" />
+          </div>
           </div>
           
           <div id="tab2contenu">
@@ -123,14 +140,22 @@
     </div>
   </main>
 
-  <!--------->
+  <!--footer-->
   <footer>
     <div class="footer">
-      <a href="../index.html" id="logo">e.kea</a>
-      <p>Nous Contacter</p>
+      <p id="logo_footer">
+        e.kea
+      </p>
+      <a href="vues/vue-contacter">
+        <p>Nous Contacter &nbsp;</p>
+      </a>
     </div>
   </footer>
-
+  <div class="script">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </div>
 </body>
 
 </html>

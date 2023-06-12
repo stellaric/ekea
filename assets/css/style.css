@@ -267,11 +267,12 @@ p#logo_footer {
 }
 
 /*section inspiration */
-#section_inspiration {
+#section_inspi {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
+  width:100%;
+  
 }
 
 #txt_inspiration {
@@ -519,6 +520,7 @@ img.hover-shadow {
     justify-content: center;
     align-items: center;
     background-color: #B7B7A4;
+        height: 130px;
   }
 
 #main_loader {
@@ -530,15 +532,7 @@ img.hover-shadow {
 
 }
 
-#footer_loader {
-    background: rgba(30, 30, 30, 0.82);
-    height: 54px;
-    color: white;
-}
-#footer_loader h2 {
-  text-align:center;
-  font-size:40px;
-}
+
 
   #loader {
   border:10px solid black;
@@ -581,8 +575,46 @@ img.hover-shadow {
 
  
 
-/*________________________________*/
+/*_____________page service___________________*/
+#main_service {
+    display: flex;
+    flex-direction: column;
+  height:719px;
+}
 
+#titre_service{
+  text-align :center;
+}
+
+#tab_titre {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 3%;
+
+}
+
+#tab2{
+      padding-left: 70px;
+}
+.tab_contenu {
+    display: flex;
+    flex-direction: column;
+      background: #d8663c;
+}
+#tab1contenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tab2contenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 /*version mobile*/
 
 @media only screen and (max-width : 767px) {
@@ -753,4 +785,73 @@ height: 180px;
 }
 
 /**/
+
+  /*__________________page loader_____________________________*/
+  #body_loader {
+    background-color: #B7B7A4;
+  }
+
+  #header_loader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #B7B7A4;
+        height: 130px;
+  }
+
+#main_loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 800px;
+
+}
+
+
+
+  #loader {
+  border:10px solid black;
+  border-left-color: transparent;
+  border-radius: 50%;
+  animation: spin89345 1s linear infinite;
+}
+
+#loader {
+  border: 10px solid black;
+  border-left-color: transparent;
+      width: 176px;
+    height: 176px;
+}
+
+#loader {
+  border: 10px solid black;
+  border-left-color: transparent;
+      width: 176px;
+    height: 176px;
+
+}
+
+@keyframes spin89345 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+  #loader_txt {
+    font-size: x-large;
+    text-align: center;
+     width: 170px; 
+    line-height:48px;
+  }
+
+ 
+
+/*________________________________*/
+
 }
