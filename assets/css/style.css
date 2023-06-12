@@ -267,12 +267,11 @@ p#logo_footer {
 }
 
 /*section inspiration */
-#section_inspi {
+#section_inspiration {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width:100%;
-  
+
 }
 
 #txt_inspiration {
@@ -579,7 +578,7 @@ img.hover-shadow {
 #main_service {
     display: flex;
     flex-direction: column;
-  height:719px;
+  height724px;
 }
 
 #titre_service{
@@ -600,7 +599,6 @@ img.hover-shadow {
 .tab_contenu {
     display: flex;
     flex-direction: column;
-      background: #d8663c;
 }
 #tab1contenu {
     display: flex;
