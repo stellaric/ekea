@@ -1,125 +1,162 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-
-<body>
-  <title>E-kea</title>
-  </head>
-
-  <body>
-
-    <header>
-      <!--navbar-->
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <!-- lien symbole de croix  configurée pr que lorsqu'on clique dessus, il ne se passe rien -->
-        <h2>e.kea</h2>
-        <a href="../index.html">Accueil</a>
-        <a href="vue-inspiration.html">Inspirations</a>
-        <a href="vue-produits.html">Produits</a>
-        <a href="vue-services.html">Nos Services</a>
-        <a href="vue-contacter.html">Nous Contacter</a>
-
-        <div class="reseaux">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <!-- lien symbole de croix  configurée pr que lorsqu'on clique dessus, il ne se passe rien -->
-          <a href="#"><span class="iconify" data-icon="iconoir:instagram" style="color: white;"></span></a>
-          <a href="#"><span class="iconify" data-icon="eva:facebook-outline" style="color: white;"></span></a>
-          <a href="#"><span class="iconify" data-icon="basil:twitter-outline" style="color: white;"></span></a>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../assets/css/style.css">
+		<title>E.kea</title>
+	</head>
+	<body>
+		<!--header-->
+		<header>
+			<nav>
+				<!--navbar -->
+				<div class="navbar">
+					<!--menu-->
+					<div class="icon_menu">
+						<span class="iconify" data-icon="fontisto:nav-icon-a" style="color: black;" data-width="40"data-height="38.58" onclick="openNav()"></span>
+					</div>
+					<div class="logo">
+						<h1>e.kea</h1>
+					</div>
+					<div class="icon_panier">
+						<span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="45"data-height="38.58"></span>
+					</div>
+				</div>
+				<!--menu fullscreen-->
+				<div id="mySidenav" class="sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<div class="sidenav-content">
+						<div class="header-sidenav">
+							<h2>e.kea</h2>
+						</div>
+						<div class="main-sidenav">
+							<div class="lien">
+								<a href="#">Accueil</a>
+								<a href="#">Inspirations</a>
+								<a href="#">Produits</a>
+								<a href="#">Nos services</a>
+								<a href="#">Nous contacter</a>
+							</div>
+							<div class="reseaux">
+								<a href="#"><span class="iconify" data-icon="iconoir:instagram" style="color: white;"></span></a>
+								<a href="#"><span class="iconify" data-icon="eva:facebook-outline" style="color: white;"></span></a>
+								<a href="#"><span class="iconify" data-icon="basil:twitter-outline" style="color: white;"></span></a>
+							</div>
+						</div>
+						<div class="footer-sidenav">
+							<div class="copyright">
+								<p>
+									Copyright-Jade Stella
+								</p>
+							</div>
+						</div>
+					</div>
+					</div 
+					<!---->
+				</nav>
+				<!---->
+				<div id="header_inspiration"></div>
+				<!-- img inspiration -->
+			</div>
+		</header>
+    	<!--main-->
+		<main>
+      
+			<section id="section_inspiration">
+				<h2>Nos Inspirations</h2>
+        <div class="cnt_inspiration">
+				<div id="contenu_inspiration">
+					<div class="card_inspiration">
+						<img src="../images/img1.jpeg" alt="img-1" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" />
+						<p>
+							Chambre Zen
+						</p>
+					</div>
+					<div class="card_inspiration">
+						<img src="../images/header_inspiration.jpeg" alt="img-2" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" />
+						<p>
+							Salon Détente
+						</p>
+					</div>
         </div>
-        <div class="copyright">
-          <p>Copyright-Jade Stella</p>
+      
+        		<div id="contenu_inspiration">
+					<div class="card_inspiration">
+						<img src="../images/cuisine.jpg" alt="img-3" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" />
+						<p>
+							Cuisine Moderne
+						</p>
+					</div>
+					<div class="card_inspiration">
+						<img src="../images/img5.jpeg" alt="img-4" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" />
+						<p>
+							Salon Bohème
+						</p>
+					</div>
+              	</div>
+        				<div id="contenu_inspiration">
+					<div class="card_inspiration">
+						<img src="../images/img4.jpeg" alt="img-5" onclick="openModal();currentSlide(5)" class="hover-shadow cursor" />
+						<p>
+							Salon Élégance
+						</p>
+					</div>
+					<div class="card_inspiration">
+						<img src="../images/img3.jpeg" alt="img-6" onclick="openModal();currentSlide(6)" class="hover-shadow cursor" />
+						<p>
+							Chambre Urbaine
+						</p>
+					</div>
+				</div>
+          </div>
+				<!--modal-->
+				<div id="myModal" class="modal">
+					
+					<div class="modal-content">
+						<div class="myImg">
+							<img src="../images/img1.jpeg" style="width:100%">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+						</div>
+						<div class="myImg">
+							<img src="../images/header_inspiration.jpeg" style="width:100%">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+						</div>
+						<div class="myImg">
+							<img src="../images/cuisine.jpg" style="width:100%">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+						</div>
+						<div class="myImg">
+							<img src="../images/img5.jpeg" style="width:100%">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+						</div>
+						<div class="myImg">
+							<img src="../images/img4.jpeg" style="width:100%">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+						</div>
+						<div class="myImg">
+							<img src="../images/img3.jpeg" style="width:100%">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+						</div>
+          </div>
         </div>
-      </div>
-
-      <div class="navbar">
-        <span class="iconify" data-icon="fontisto:nav-icon-a" style="color: black;margin-left:12px;" data-width="45"
-          data-height="38.58" onclick="openNav()"></span>
-        <h1>e.kea</h1>
-        <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;margin-right:12px;"
-          data-width="45" data-height="38.58"></span>
-      </div>
-      </div>
-      <div id="header_inspiration">
-      </div>
-    </header>
-
-
-    <main>
-      <section id="section_inspiration">
-
-        <h2>Nos Inspirations</h2>
-
-        <div id="contenu_inspiration">
-
-
-          <div class="card_inspiration">
-            <img src="../images/img1.jpeg" alt="img-1" onclick="Modal('modal01')" />
-            <p>Chambre Zen</p>
-
-            <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-              <div class="w3-modal-content w3-animate-zoom">
-                <img src="../images/img1.jpeg" style="width:100%">
-              </div>
-            </div>
-          </div>
-
-
-          <div class="card_inspiration">
-            <img src="../images/img2.jpeg" alt="img-2" id="myImg" />
-            <p>Salon Détente</p>
-          </div>
-
-
-          <div class="card_inspiration">
-            <img src="../images/img3.jpeg" alt="img-3" id="myImg" />
-            <p>Cuisine Moderne</p>
-          </div>
-
-          <div class="card_inspiration">
-            <img src="../images/img4.jpeg" alt="img-4" id="myImg" />
-            <p>Salon Bohème</p>
-          </div>
-
-          <div class="card_inspiration">
-            <img src="../images/img5.jpeg" alt="img-5" id="myImg" />
-            <p>Chambre Urbaine</p>
-          </div>
-
-          <div class="card_inspiration">
-            <img src="../images/img-services.jpeg" alt="img-6" id="myImg" />
-            <p>Salon Urbaine</p>
-          </div>
-
-
-
-
-
-        </div>
-
-
-      </section>
-    </main>
-
-
-    <footer>
-
-      <div class="footer">
-        <a href="#" id="logo">e.kea</a>
-        <p>Nous Contacter</p>
-      </div>
-
-    </footer>
-    <script src="../assets/js/script.js"></script>
-
-  </body>
-
-</html>
+					</section>
+				</main>
+        	<!--footer-->
+				<footer>
+					<div class="footer">
+						<p id="logo_footer">
+							e.kea
+						</p>
+						<a href="vues/vue-contacter"><p>Nous Contacter &nbsp;</p></a>
+					</div>
+				</footer>
+        	<!--script-->
+				<div class="script">
+					<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+					<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+					<script src="../assets/js/script.js"></script>
+				</div>
+			</body>
+		</html>

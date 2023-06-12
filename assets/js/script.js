@@ -1,34 +1,54 @@
+// Fonctionnalite en js 
+
+//______________________NAVBAR____________________________________
 function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.width = "0%";
 }
 
 
 
+//_______________________CARROUSEL___________________________________
+//page accueil & service (carrousel)
+// obtiens  l'element de  slider
+var slider = document.getElementById("slider");
 
-//--------------Carousel--------------
+// obtiens  les element de la diapositives
+var slides = slider.querySelectorAll(".slide");
 
-// Exécute le code une fois que la page HTML est chargée
-$(document).ready(function() {
-  // Sélectionne tous les éléments HTML qui ont la classe "owl-carousel" et initialise le plugin Owl Carousel
-  $(".owl-carousel").owlCarousel({
-    // Le carrousel ne montrera qu'un élément à la fois
-    items: 1,
-    // Le carrousel bouclera lorsqu'il arrive au dernier élément
-    loop: true,
-    // Le carrousel défilera automatiquement.
-    autoplay: true,
-    // Définit la vitesse à laquelle les images défilent
-    autoplaySpeed: 1000,
-    // Définit la vitesse de transition entre les images
-    smartSpeed: 500,
-    // Arrête le défilement lorsque l'utilisateur passe sa souris sur un élément
-    autoplayHoverPause: true,
-  });
-});
+// Creation d'un index pour commencer le diapositive
+var indice = 0;
+
+// fonction pour montrer le second diapositives 
+function next() {
+  // Ocultamos todas las diapositivas
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  // Incrementamos el índice
+  indice++;
+
+  // Si llegamos al final de la lista de diapositivas, volvemos al principio
+  if (indice >= slides.length) {
+    indice = 0;
+  }
+
+  // Mostramos la diapositiva actual
+  slides[indice].style.display = "block";
+}
+
+// Mostramos la primera diapositiva
+next();
+
+// Establecemos un intervalo para mostrar la siguiente diapositiva cada 3 segundos
+setInterval(next, 3000);
+
+
+
 
 //-----------------DROPDOWN-------------------------------------
 
@@ -98,28 +118,36 @@ for (var i = 0; i < btns.length; i++) {
 
 
 
-// modal crée par stella 
+//-----------------MODAL-------------------------------------
 
-var img_modal
-function Modal(img_modal) {
-  document.getElementById(img_modal).style.display = 'block'
+
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
 }
 
-//carrousel
-
-const carousel = document.querySelector('.contener_slideshow');
-const slideWidth = carousel.clientWidth;
-const slideCount = carousel.children.length;
-
-carousel.style.width = `${slideWidth * slideCount}px`;
-
-// tabs
-function selectTab(tabIndex) {
-  //Hide All Tabs
-  document.getElementById('tab1contenu').style.display = "none";
-  document.getElementById('tab2contenu').style.display = "none";
-
-  //Show the Selected Tab
-  document.getElementById('tab' + tabIndex + 'contenu').style.display = "block";
-
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
 }
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("myImg");
+  if (n > slides.length) { slideIndex = 1; }
+  if (n < 1) { slideIndex = slides.length; }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+}
+
