@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
@@ -11,7 +11,7 @@
 </head>
 
 
-<body style="background: white;">
+<body>
 
   <header>
     <nav>
@@ -84,17 +84,12 @@
   </header>
 
   <main>
-
-
-
-
-
-
-
     <div id="main_service">
+
       <section id="titre_service">
         <h2>Nos Services</h2>
       </section>
+
       <section class="tab_service">
         <div class="tabs">
           <div class="tab" onclick="openTab(event, 'tab1')"> Nos services de livraison</div>
@@ -103,47 +98,53 @@
 
         <div class="tab_contenu">
           <div id="tab1" class="tab-content active">
-            <div class="ctn_1">
-              <h5>Petit colis : </h5>
-              <p>Chronopost
-                <br>(articles de moins de 12,5kg)
-                <br>9.90 €
-              </p>
+            <div class="ctn">
+              <div class="ctn_txt">
+                <h5>Petit colis : </h5>
+                <p>Chronopost
+                  <br>(articles de moins de 12,5kg)
+                  <br>9.90 €
+                </p>
 
-              <h5>Livraison domicile par <br> transporteur :</h5>
-              <p>
-                39€ pour un achat inférieur à 400€ <br>
-                59€ pour un achat supérieur à 400€ et inférieur à 1000€
-                <br>109€ pour un achat supérieur à 1000€
-              </p>
+                <h5>Livraison domicile par <br> transporteur :</h5>
+                <p>
+                  39€ pour un achat inférieur à 400€ <br>
+                  59€ pour un achat supérieur à 400€ et inférieur à 1000€
+                  <br>109€ pour un achat supérieur à 1000€
+                </p>
+              </div>
+              <div class="ctn_1_img">
+
+              </div>
             </div>
-            <div class="ctn_1_img">
-              <img src="../images/img-services.jpeg" alt="img-service" width="320px" height="320px" />
-            </div>
-            
           </div>
 
-          <div id="tab2" class="tab-content">
-            <h4>Paiement par carte bancaire </h4>
-            <div class="icon_card">
-              <span class="iconify" data-icon="ion:card" style="width:83px; height:94px;"></span>
-              <span class="iconify" data-icon="ion:card-outline" style="width:83px; height:94px;"></span>
-              <span class="iconify" data-icon="basil:card-outline" style="width:83px; height:94px;"></span>
+
+
+          <div id="tab2" class="tab-content ">
+            <div class="ctn">
+              <div class="ctn_txt">
+                <h4>Paiement par carte bancaire </h4>
+                <div class="icon_card">
+                  <span class="iconify" data-icon="ion:card" style="width:83px; height:94px;"></span>
+                  <span class="iconify" data-icon="ion:card-outline" style="width:83px; height:94px;"></span>
+                  <span class="iconify" data-icon="basil:card-outline" style="width:83px; height:94px;"></span>
+                </div>
+
+                <h4>Paiement par Paypal </h4>
+                <span class="iconify" data-icon="uit:paypal" style="width:83px; height:94px;"></span>
+
+                <h4>Paiement 4 x sans frais </h4>
+                <div id="bg_border">
+                  <p>4x Sans Frais <br>par CB</p>
+                </div>
+              </div>
+              <div class="ctn_2_img"></div>
             </div>
-
-            <h4>Paiement par Paypal </h4>
-            <span class="iconify" data-icon="uit:paypal" style="width:83px; height:94px;"></span>
-
-            <h4>Paiement 4 x sans frais </h4>
-            <div id="bg_border">
-              <p>4x Sans Frais <br>par CB</p>
-            </div>
-            <img src="../images/card_2.jpg" alt="img-service" width="320px" height="320px" />
-
           </div>
-
         </div>
-      </section>
+    </div>
+    </section>
     </div>
 
   </main>
