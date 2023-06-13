@@ -54,7 +54,7 @@ header {
   }
   
   .sidenav a:hover {
-    color: #9e3434;
+    color: black;
   }
   
   .sidenav .closebtn {
@@ -69,9 +69,8 @@ header {
 background-color: #6B705C;
 color: white;
 text-align: center;
-padding: 73px;
+padding: 104px;
 height: 182px;
-margin-top : 437px;
 font-size: 20px;
 }
 
@@ -627,13 +626,13 @@ align-items: center;
   .bannierecontact {
 
     background-image:url("../../images/header_contact.jpg");
-     height: 230px;
-     background-position: center;
+     height: 450px;
+     background-position: bottom;
      background-size: cover;
      background-repeat: no-repeat;
   }
 
-  .container {
+  /*.container {
     display: flex;
     flex-direction: row;
  
@@ -642,7 +641,19 @@ align-items: center;
     width: 70%;
     margin-left: 19%;
   
-  }
+  }*/
+
+.container_map{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+
+
+}
+
+
+
+
   
   .text {
     padding: 20px;
@@ -720,7 +731,7 @@ header {
     padding: 8px 8px 30px 32px;
     text-decoration: none;
     font-family: 'Italiana', serif;
-    font-size: 25px;
+    font-size: 30px;
     color: white;
     display: block;
     text-align: center;
@@ -728,7 +739,7 @@ header {
   }
   
   .sidenav a:hover {
-    color: #5c5757;
+    color: black;
   }
   
   .sidenav .closebtn {
@@ -745,7 +756,7 @@ height: 40%;
 margin-bottom: 0;
 color: white;
 text-align: center;
-padding: 73px;
+padding: 104px;
 height: 182px;
 margin: -26px;
 }
@@ -910,10 +921,10 @@ footer {
   padding: 20px;
 }
 
-.copyright {
+/*.copyright {
   text-align: center;
   padding: 100px;
-}
+}/*
 
 
 
@@ -943,8 +954,12 @@ footer {
 }
 
 .formulaire{
-  width: 444px;
+  width: 390px;
 }
+
+
+
+
 
 * {
   box-sizing: border-box;
@@ -1010,11 +1025,11 @@ hr {
 
 
 /*-----------------------MAP----------------*/
-.container {
+.container_map{
   display: flex;
   flex-direction: row;
-  margin: 10px;
   height: 300px;
+  width: 80%;
 
 }
 
@@ -1024,7 +1039,7 @@ hr {
   color: black;
   font-size: 1em;
   width: 50%;
-  height: 350px;
+  height: 300px;
   text-align: center;
   
  
@@ -1033,8 +1048,16 @@ hr {
 
 .map {
   width: 50%;
-  border-radius: 0 20px 20px 0;
+  border-radius: 0px;
+  overflow: hidden;
 }
+
+
+iframe {
+  height: 100%;
+  width: 390px;
+  
+  }
 
 
 /*-----------------------------------------------------------------------PAGE PANIER VIDE-----------------------------------------*/
@@ -1050,7 +1073,7 @@ font-size: 30px;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  height: 100%;
+  height: 254px;
   margin-bottom: 30px;
   
 }
@@ -1150,7 +1173,7 @@ margin-right: 0;
 
 form {
   flex-direction: column;
-  width: 710px;
+  width: 390px;
   display: flex;
 }
 
