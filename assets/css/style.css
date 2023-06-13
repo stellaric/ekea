@@ -267,11 +267,12 @@ p#logo_footer {
 }
 
 /*section inspiration */
-#section_inspiration {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 
+#section_inspi {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #txt_inspiration {
@@ -460,9 +461,6 @@ p#logo_footer {
   font-size: 54px;
   font-weight: 800;
 }
-
-
-
 .close:hover,
 .close:focus {
   color: #999;
@@ -481,7 +479,7 @@ p#logo_footer {
   cursor: pointer;
 }
 
-img {
+.img {
   margin-bottom: -4px;
 }
 
@@ -578,12 +576,308 @@ img.hover-shadow {
   font-size: x-large;
   text-align: center;
   width: 170px;
-  line-height
+
 }
 
 
 
-/*________________________________*/
+/*_______________page services _________________*/
+#main_service {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 786px;
+}
+
+#titre_service {
+  text-align: center;
+  height: 100px;
+}
+
+#titre_service h2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+
+}
+
+.ctn_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*tab*/
+.tabs {
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+  font-size: larger;
+}
+
+.tab {
+  padding: 20px 20px;
+  background-color: #C7815C;
+  cursor: pointer;
+  box-shadow: 2px 3px 6px 0px #41433d;
+}
+
+.tab_contenu {
+  background-color: #C7815C;
+  height: 623px;
+  width: 100%;
+}
+
+#tab1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 623px;
+  width: 100%;
+}
+
+.tab:hover {
+  background-color: #A76F51;
+}
+
+
+.ctn_1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  font-size: x-large;
+  width: 55%;
+  padding: 21px;
+}
+
+.ctn_1_img img {
+
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.tab-content {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+
+
+/*__________________________________*/
+
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+/*_______________page produit _________________*/
+
+#header_produit {
+    background: url(../../images/header_produit.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 650px;
+}
+
+#main_produit {
+  background-color:white;
+}
+#section_produit {
+    background-color: white;
+    height: 760px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+
+}
+#section_produit h2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+
+.filterDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 450px;
+    display: none;
+  }
+  .filterDiv img {
+    width:500px;
+    height:650px;
+    object-fit:cover;
+  }
+  .show {
+    display: block;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+.ctn-confort , .ctn-surface, .ctn-deco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.ctn-confort img , .ctn-surface img , .ctn-deco img {
+    width: 403px;
+    height: 218px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    object-fit: cover;
+      margin-bottom: 6%;
+}
+.titre_prod h4 {
+  text-align:center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+
+}
+
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+  #dropbtn {
+ 
+    width: 369px;
+    height: 57px;
+    left: 548px;
+    top: 411px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+  }
+  
+  #dropbtn:hover, .dropbtn:focus {
+    background-color: #388547;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+ .dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    width: 335px;
+    height: 57px;
+    left: 548px;
+    top: 411px;
+    background: #6b705c;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: -2%;
+    display: block;
+    text-align: center;
+}
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+
+
+
+
 
 /*version mobile*/
 
@@ -756,4 +1050,51 @@ img.hover-shadow {
   }
 
   /**/
+  /*____________________________page inspiration_______________________*/
+
+
+  #header_produit {
+    height: 222px;
+  }
+
+  #section_produit {
+    background-color: #B7B7A4;
+    height: 905px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #section_produit h2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+
+  }
+
+  .cnt_inspiration {
+    flex-direction: column;
+  }
+
+.ctn-confort , .ctn-surface, .ctn-deco {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 276px;
+
+  }
+
+
+   .ctn-confort img , .ctn-surface img , .ctn-deco img{
+    width: 150px;
+    height: 180px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    object-fit: cover;
+  }
+
 }

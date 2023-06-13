@@ -84,86 +84,68 @@
   </header>
 
   <main>
-   <div id="panneau">
-			<ul id="onglets" class="clearfix">
-				<li >Contenu 1</li>
-				<li >Contenu 2</li>
-
-			</ul>
-			<ul id="contenus">
-				<li >
-					<p>Tu comprends, même si on frime comme on appelle ça en France... il faut se recréer... pour recréer... a better you et finalement tout refaire depuis le début. Et j'ai toujours grandi parmi les chiens. </p>
-				</li>
-				<li >
-					<p>Si je t'emmerde, tu me le dis, je suis mon meilleur modèle car le cycle du cosmos dans la vie... c'est une grande roue et cela même si les gens ne le savent pas ! Et là, vraiment, j'essaie de tout coeur de donner la plus belle réponse de la terre !  </p>
-
-				</li>
-				<li >
-					<p>You see, premièrement, il faut toute la splendeur du aware et cette officialité peut vraiment retarder ce qui devrait devenir... Donc on n'est jamais seul spirituellement !  </p>
-	
-				</li>
-			</ul>
-</div>
-    </div>
 
 
 
-    <!--
+
+
+
+
     <div id="main_service">
       <section id="titre_service">
         <h2>Nos Services</h2>
       </section>
       <section class="tab_service">
-        <div id="tab_titre">
-          <div id="tab1" onclick="selectTab(1)">
-            Nos services de livraison
-          </div>
-          <div id="tab2" onclick="selectTab(2);">
-            Nos modes de paiement
-          </div>
+        <div class="tabs">
+          <div class="tab" onclick="openTab(event, 'tab1')"> Nos services de livraison</div>
+          <div class="tab" onclick="openTab(event, 'tab2')"> Nos modes de paiement</div>
         </div>
+
         <div class="tab_contenu">
-          <div id="tab1contenu">
-<div class="ctn_1">
-            <h5>Petit colis : </h5>
-            <p>Chronopost
-              <br>(articles de moins de 12,5kg)
-              <br>9.90 €
-            </p>
+          <div id="tab1" class="tab-content active">
+            <div class="ctn_1">
+              <h5>Petit colis : </h5>
+              <p>Chronopost
+                <br>(articles de moins de 12,5kg)
+                <br>9.90 €
+              </p>
+
+              <h5>Livraison domicile par <br> transporteur :</h5>
+              <p>
+                39€ pour un achat inférieur à 400€ <br>
+                59€ pour un achat supérieur à 400€ et inférieur à 1000€
+                <br>109€ pour un achat supérieur à 1000€
+              </p>
+            </div>
+            <div class="ctn_1_img">
+              <img src="../images/img-services.jpeg" alt="img-service" width="320px" height="320px" />
+            </div>
             
-            <h5>Livraison domicile par <br> transporteur :</h5>
-             <p>
-            39€ pour un achat inférieur à 400€ <br>
-            59€ pour un achat supérieur à 400€ et inférieur à 1000€
-           <br>109€ pour un achat supérieur à 1000€
-            </p>
-            <img src="../images/img-services.jpeg" alt="img-service" width="320px" height="320px" />
           </div>
-          </div>
-          
-          <div id="tab2contenu">
+
+          <div id="tab2" class="tab-content">
             <h4>Paiement par carte bancaire </h4>
             <div class="icon_card">
               <span class="iconify" data-icon="ion:card" style="width:83px; height:94px;"></span>
-              <span class="iconify" data-icon="ion:card-outline" style="width:83px; height:94px;" ></span>
-              <span class="iconify" data-icon="basil:card-outline" style="width:83px; height:94px;" ></span>
-              </div>
+              <span class="iconify" data-icon="ion:card-outline" style="width:83px; height:94px;"></span>
+              <span class="iconify" data-icon="basil:card-outline" style="width:83px; height:94px;"></span>
+            </div>
 
             <h4>Paiement par Paypal </h4>
-            <span class="iconify" data-icon="uit:paypal" style="width:83px; height:94px;" ></span>
-            
-            <h4>Paiement 4 x sans frais  </h4>
+            <span class="iconify" data-icon="uit:paypal" style="width:83px; height:94px;"></span>
+
+            <h4>Paiement 4 x sans frais </h4>
             <div id="bg_border">
               <p>4x Sans Frais <br>par CB</p>
             </div>
-     <img src="../images/card_2.jpg" alt="img-service" width="320px" height="320px" />
-            
+            <img src="../images/card_2.jpg" alt="img-service" width="320px" height="320px" />
+
           </div>
-          
+
         </div>
       </section>
     </div>
-    -->
+
   </main>
 
   <!--footer-->

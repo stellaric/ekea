@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <title>E.kea</title>
+</head>
+
+<body>
+  <!--header-->
+  <header>
+    <nav>
+      <!--navbar -->
+      <div class="navbar">
+        <!--menu-->
+        <div class="icon_menu">
+          <span class="iconify" data-icon="fontisto:nav-icon-a" style="color: black;" data-width="40"
+            data-height="38.58" onclick="openNav()"></span>
+        </div>
+        <div class="logo">
+          <h1>e.kea</h1>
+        </div>
+        <div class="icon_panier">
+          <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="45"
+            data-height="38.58"></span>
+        </div>
+      </div>
+      <!--menu fullscreen-->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="sidenav-content">
+          <div class="header-sidenav">
+            <h2>e.kea</h2>
+          </div>
+          <div class="main-sidenav">
+            <div class="lien">
+              <a href="#">Accueil</a>
+              <a href="#">Inspirations</a>
+              <a href="#">Produits</a>
+              <a href="#">Nos services</a>
+              <a href="#">Nous contacter</a>
+            </div>
+            <div class="reseaux">
+              <a href="#"><span class="iconify" data-icon="iconoir:instagram" style="color: white;"></span></a>
+              <a href="#"><span class="iconify" data-icon="eva:facebook-outline" style="color: white;"></span></a>
+              <a href="#"><span class="iconify" data-icon="basil:twitter-outline" style="color: white;"></span></a>
+            </div>
+          </div>
+          <div class="footer-sidenav">
+            <div class="copyright">
+              <p>
+                Copyright-Jade Stella
+              </p>
+            </div>
+          </div>
+        </div>
+      </div <!---->
+    </nav>
+    <!---->
+    <!-- img header -->
+    <div id="header_produit"></div>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <section id="section_produit">
+      <h2>Produits</h2>
+
+
+      <div class="dropdown" id="myBtnContainer">
+        <button class="btn active" id="dropbtn" onclick="filterSelection('all')">Filtre</button>
+        <div class="dropdown-content">
+          <a href="#" onclick="filterSelection('all')">Tous</a>
+          <a href="#" onclick="filterSelection('confort')">Confort</a>
+          <a href="#" onclick="filterSelection('surface')">Surface</a>
+          <a href="#" onclick="filterSelection('decoration')">Décoration</a>
+
+        </div>
+      </div>
+
+
+      <div class="container">
+
+
+
+        <div class="filterDiv confort">
+          <div class="titre_prod">
+            <h4>Confort</h4>
+          </div>
+          <div class="ctn-confort">
+            <img src="../images/confort_1.jpeg" alt="confort_1" class="hover-shadow cursor"
+              onclick="openWindow();currentSlide(1)" />
+            <img src="../images/img2.jpeg" alt="confort_2" class="hover-shadow cursor"
+              onclick="openWindow();currentSlide(2)" />
+
+          </div>
+        </div>
+
+
+        <div class="filterDiv surface ">
+          <div class="titre_prod">
+            <h4>Surface</h4>
+          </div>
+
+          <div class="ctn-surface ">
+
+            <img src="../images/surface-1.jpeg" alt="surface_1" class="hover-shadow cursor"
+              onclick="openWindow();currentSlide(3)" />
+            <img src="../images/surface-2.jpeg" alt="surface_2" class="hover-shadow cursor "
+              onclick="openWindow();currentSlide(4)" />
+
+          </div>
+        </div>
+
+        <div class="filterDiv decoration ">
+          <div class="titre_prod">
+            <h4>Décoration</h4>
+          </div>
+
+          <div class="ctn-deco">
+
+            <img src="../images/deco-1.jpeg" alt="deco-1" style="object-position:center;" class="hover-shadow cursor"
+              onclick="openWindow();currentSlide(5)" />
+            <img src="../images/deco-2.jpeg" alt="deco-2" class="hover-shadow cursor"
+              onclick="openWindow();currentSlide(6)" />
+
+          </div>
+        </div>
+
+      </div>
+
+      <div id="mywind" class="modal">
+
+        <div class="modal-content">
+          <div class="myProd">
+            <img src="../images/confort_1.jpeg" alt="confort_1" class="hover-shadow cursor"
+              onclick="openWindow();currentSlide(1)" />
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+          </div>
+
+          <div class="myProd">
+            <img src="../images/img2.jpeg" alt="confort_2" class="hover-shadow cursor"
+              onclick="openWindow();currentSlide(2)" />
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+          </div>
+          <div class="myImg">
+            <img src="../images/cuisine.jpg" style="width:100%">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+          </div>
+          <div class="myImg">
+            <img src="../images/img5.jpeg" style="width:100%">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+          </div>
+          <div class="myImg">
+            <img src="../images/img4.jpeg" style="width:100%">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+          </div>
+          <div class="myImg">
+            <img src="../images/img3.jpeg" style="width:100%">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <!--footer-->
+  <footer>
+    <div class="footer">
+      <p id="logo_footer">
+        e.kea
+      </p>
+      <a href="vue-contacter">
+        <p>Nous Contacter &nbsp;</p>
+      </a>
+    </div>
+  </footer>
+  <div class="script">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+  </div>
+</body>
+
+</html>
