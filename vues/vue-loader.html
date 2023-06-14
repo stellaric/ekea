@@ -2,47 +2,89 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <title>E-Kea</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>E-Kea</title>
 </head>
 
 <body id="body_loader">
-  <header>
+    <header>
 
-    <div id="header_loader">
-      <h1>e.kea</h1>
-    </div>
-  </header>
-
-  <main>
-    <div id="main_loader">
-      <div id="loader"></div>
-
-  
-    <div id="loader_txt">Vous aller être rediriger à la page d’accueil...</div>
+        <div id="header_loader">
+            <h1>e.kea</h1>
         </div>
-  </main>
+    </header>
+
+    <main>
+        <div id="main_loader">
+            <div id="loader"></div>
+
+
+            <div id="loader_txt">Vous aller être rediriger à la page d’accueil...</div>
+        </div>
+    </main>
 
 
     <!--footer-->
-  <footer>
-    <div class="footer">
-      <p id="logo_footer">
-        e.kea
-      </p>
-      <a href="vues/vue-contacter">
-        <p>Nous Contacter &nbsp;</p>
-      </a>
+    <footer>
+        <div class="footer">
+            <p id="logo_footer">
+                e.kea
+            </p>
+            <a href="vues/vue-contacter">
+                <p>Nous Contacter &nbsp;</p>
+            </a>
+        </div>
+    </footer>
+    <div class="script">
+        <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+        <!-- Ajout de la bibliothèque SweetAlert2 -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+
+        <script src="assets/js/script.js"></script>
+        <!-- Script pour masquer la page de chargement et afficher la pop-up -->
+        <script>
+            // Fonction pour masquer la page de chargement
+            function hideLoader() {
+                var loader = document.getElementById('loader');
+                loader.style.display = 'none';
+            }
+
+            // Fonction pour afficher la pop-up d'alerte et rediriger vers une autre page
+            function showAlert() {
+                Swal.fire({
+                    title: 'Succès !',
+                    text: 'Votre panier a été validé avec succès.',
+                    icon: 'success',
+                    confirmButtonText: 'OK'
+                }).then(function() {
+                    // Redirection vers une autre page
+                    window.location.href = '../index.html'; // Remplacez par l'URL souhaitée
+                });
+            }
+
+            // Événement de chargement de la page
+            window.addEventListener('load', function() {
+                setTimeout(function() {
+                    hideLoader(); // Masquer la page de chargement après un délai
+                    showAlert(); // Afficher la pop-up d'alerte
+                }, 2000); // Délai en millisecondes avant l'affichage de la pop-up (ici, 2 secondes)
+            });
+        </script>
+
+
+
+
+
+
+
+
+
+
     </div>
-  </footer>
- <div class="script">
-    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script src="assets/js/script.js"></script>
-  </div>
 </body>
 
 </html>

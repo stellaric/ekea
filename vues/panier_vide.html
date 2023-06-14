@@ -2,88 +2,90 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <script src="../assets/js/script.js"></script>
-  <title>E-kea</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/script.js"></script>
+    <title>E-kea</title>
 </head>
 
 <body>
- 
+
     <header>
 
-       <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!-- lien symbole de croix  configurée pr que lorsqu'on clique dessus, il ne se passe rien -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- lien symbole de croix  configurée pr que lorsqu'on clique dessus, il ne se passe rien -->
             <h2>e.kea</h2>
-            <a href="index.hmtl">Accueil</a>
+            <a href="../index.hmtl">Accueil</a>
             <a href="vue-inspiration.html">Inspirations</a>
-            <a href="produit.html">Produits</a>
+            <a href="vue-produit.html">Produits</a>
             <a href="vues-services.html">Nos services</a>
             <a href="contact.html">Nous contacter</a>
 
 
             <div class="reseaux">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!-- lien symbole de croix  configurée pr que lorsqu'on clique dessus, il ne se passe rien -->
-            <a href="#"><span class="iconify" data-icon="iconoir:instagram" style="color: white;"  data-width="50" data-height="48.58"></span></a>
-            <a href="#"><span class="iconify" data-icon="eva:facebook-outline" style="color: white;" data-width="50" data-height="48.58"></span></a>
-            <a href="#"><span class="iconify" data-icon="basil:twitter-outline" style="color: white;"  data-width="50" data-height="48.58"></span></a>
+                <!-- lien symbole de croix  configurée pr que lorsqu'on clique dessus, il ne se passe rien -->
+                <a href="#"><span class="iconify" data-icon="iconoir:instagram" style="color: white;"  data-width="50" data-height="48.58"></span></a>
+                <a href="#"><span class="iconify" data-icon="eva:facebook-outline" style="color: white;" data-width="50" data-height="48.58"></span></a>
+                <a href="#"><span class="iconify" data-icon="basil:twitter-outline" style="color: white;"  data-width="50" data-height="48.58"></span></a>
             </div>
             <div class="copyright">
                 <p>Copyright-Jade Stella</p>
             </div>
-          </div>
-            <div class="navbar">
+        </div>
+        <div class="navbar">
             <span class="iconify" data-icon="fontisto:nav-icon-a" style="color: black;" data-width="40" data-height="38.58" onclick="openNav()"></span>
             <h1>e.kea</h1>
-            <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="45" data-height="38.58"></span>  
+            <span class="iconify" data-icon="majesticons:shopping-cart" style="visibility: hidden;" data-width="45" data-height="38.58"></span>
+        </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="main_panier_vide">
+            <h3>Panier</h3>
+
+            <div class="panier">
+                <span class="iconify" data-icon="basil:shopping-basket-solid" style="color: black;" data-width="200" data-height="198.58"></span>
+                <div id="achats">
+                    <p>Votre panier est vide...</p>
+                    <a href="vue-produit.html">Continuer vos achats >></a>
+                </div>
+            </div>
+
+            <div class="total">
+                <div class="total_contenu">
+                    <p>Total</p>
+                    <span class="iconify" data-icon="ic:baseline-euro" style="color: black;" data-width="40" data-height="38.58"></span>
+                </div>
+
+                <div class="total_btn">
+                    <button class="button" disabled="disabled">Valider le panier</button>
+                </div>
             </div>
         </div>
-       
-  </header>
+    </main>
 
-  <main>
-    <div class="main_panier_vide">
-    <h3>Panier</h3>
-
-    <div class="panier">
-      <span class="iconify" data-icon="basil:shopping-basket-solid" style="color: black;" data-width="200" data-height="198.58"></span>
-      <div id="achats">
-      <p>Votre panier est vide...</p>
-      <a href="#">Continuer vos achats >></a>
-      </div>
+    <footer>
+        <div class="footer">
+            <p id="logo_footer">
+                e.kea
+            </p>
+            <a href="vues/vue-contacter">
+                <p>Nous Contacter &nbsp;</p>
+            </a>
+        </div>
+    </footer>
+    <div class="script">
+        <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+        <script src="../assets/js/script.js"></script>
     </div>
-  
-    <div class="total">
-      <div class="total_contenu">
-      <p>Total</p> 
-      <span class="iconify" data-icon="ic:baseline-euro" style="color: black;"  data-width="40" data-height="38.58"></span>
-      </div>
-
-      <div class="total_btn">
-      <button class="button" disabled="disabled">Valider le panier</button>
-      </div>
-    </div>
-  </div>
-  </main>
-  <footer>
-    <div class="footer">
-      <p id="logo_footer">
-        e.kea
-      </p>
-      <a href="vues/vue-contacter">
-        <p>Nous Contacter &nbsp;</p>
-      </a>
-    </div>
-  </footer>
-  <div class="script">
-    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script src="../assets/js/script.js"></script>
-  </div>
 </body>
 
 </html>

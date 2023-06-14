@@ -2,155 +2,152 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>E.kea</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>E.kea</title>
 </head>
 
 <body>
-  <!--header-->
-  <header>
-    <nav>
-      <!--navbar -->
-      <div class="navbar">
-        <!--menu-->
-        <div class="icon_menu">
-          <span class="iconify" data-icon="fontisto:nav-icon-a" style="color: black;" data-width="40"
-            data-height="38.58" onclick="openNav()"></span>
-        </div>
-        <div class="logo">
-          <h1>e.kea</h1>
-        </div>
-        <div class="icon_panier">
-          <span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="45"
-            data-height="38.58"></span>
-        </div>
-      </div>
-
-      <!--menu fullscreen-->
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="sidenav-content">
-          <div class="header-sidenav">
-            <h2>e.kea</h2>
-          </div>
-          <div class="main-sidenav">
-            <div class="lien">
-              <a href="index.html">Accueil</a>
-              <a href="vues/vue-inspiration.html">Inspirations</a>
-              <a href="vues/vue-produit.html">Produits</a>
-              <a href="vues/vue-services.html">Nos services</a>
-              <a href="vues/vue-contact.html">Nous contacter</a>
+    <!--header-->
+    <header>
+        <nav>
+            <!--navbar -->
+            <div class="navbar">
+                <!--menu-->
+                <div class="icon_menu">
+                    <span class="iconify" data-icon="fontisto:nav-icon-a" style="color: black;" data-width="40" data-height="38.58" onclick="openNav()"></span>
+                </div>
+                <div class="logo">
+                    <h1>e.kea</h1>
+                </div>
+                <div class="icon_panier">
+                    <a href="vues/panier_vide.html"><span class="iconify" data-icon="majesticons:shopping-cart" style="color: black;" data-width="45" data-height="38.58"></span></a>
+                </div>
             </div>
-            <div class="reseaux">
-              <a href="#"><span class="iconify" data-icon="iconoir:instagram" style="color: white;"></span></a>
-              <a href="#"><span class="iconify" data-icon="eva:facebook-outline" style="color: white;"></span></a>
-              <a href="#"><span class="iconify" data-icon="basil:twitter-outline" style="color: white;"></span></a>
+            <!--menu fullscreen-->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="sidenav-content">
+                    <div class="header-sidenav">
+                        <h2>e.kea</h2>
+                    </div>
+                    <div class="main-sidenav">
+                        <div class="lien">
+                            <a href="index.html">Accueil</a>
+                            <a href="vues/vue-inspiration.html">Inspirations</a>
+                            <a href="vues/vue-produit.html">Produits</a>
+                            <a href="vues/vue-services.html">Nos services</a>
+                            <a href="vues/contact.html">Nous contacter</a>
+                        </div>
+                        <div class="reseaux">
+                            <a href="#"><span class="iconify" data-icon="iconoir:instagram" style="color: white;"></span></a>
+                            <a href="#"><span class="iconify" data-icon="eva:facebook-outline" style="color: white;"></span></a>
+                            <a href="#"><span class="iconify" data-icon="basil:twitter-outline" style="color: white;"></span></a>
+                        </div>
+                    </div>
+                    <div class="footer-sidenav">
+                        <div class="copyright">
+                            <p>
+                                Copyright-Jade Stella
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-          </div>
-          <div class="footer-sidenav">
-            <div class="copyright">
-              <p>Copyright-Jade Stella</p>
+            <!---->
+        </nav>
+        <!---->
+        <div class="header_carrousel">
+            <!--slider -->
+            <div class="carousel">
+                <div id="slider">
+                    <div class="slide">
+                        <img src="images/ban1.png" id="slide1" alt="slide-1" />
+                    </div>
+                    <div class="slide">
+                        <img src="images/ban2.png" id="slide2" alt="slide-2" />
+                    </div>
+                    <div class="slide">
+                        <img src="images/ban3.png" id="slide3" alt="slide-3" />
+                    </div>
+                    <div class="slide">
+                        <img src="images/ban4.png" id="slide4" alt="slide-4" />
+                    </div>
+                    <div class="slide">
+                        <img src="images/ban5.png" id="slide5" alt="slide-5" />
+                    </div>
+                </div>
             </div>
-          </div>
-
         </div>
-      </div> <!---->
+    </header>
+    <!--main-->
+    <main>
+        <div class="main_accueil">
+            <!--section texte_defile-->
+            <section class="section_txt_defile">
+                <div class="txt_defile">
+                    <p>
+                        -20% dès 99€ d'achat &nbsp;&nbsp; -35% sur les décorations &nbsp;&nbsp; -50% sur tout avec le code JADELIA
+                    </p>
+                </div>
+            </section>
+            <!-->
+            <!--section 2: bienvenue -->
+            <section id="section_bienvenue">
+                <h1>Bienvenue !</h1>
+                <p>
+                    Bienvenue dans notre univers de meubles et décoration ! Explorez des inspirations pour
+                    <br> créer votre espace idéal. Découvrez des piéces uniques et de qualité pour embellir votre intérieur.
+                </p>
+            </section>
+            <!--section 3: inspiration -->
+            <section id="section_inspi">
+                <div id="txt_inspiration">
+                    <h2>Nos inspirations</h2>
+                    <p>
+                        Découvrez nos inspirations
+                    </p>
+                    <form method="get" action="vues/vue-inspiration.html">
+                        <button type="submit">Voir plus </button>
+                    </form>
+                </div>
+                <div id="img_inspiration"></div>
+            </section>
+            <!--section 4: service -->
+            <section id="section_service">
+                <div id="img_service"></div>
+                <div id="txt_service">
+                    <h2>Nos services</h2>
+                    <p>
+                        Découvrez nos services de livraison
+                    </p>
+                    <form method="get" action="vues/vue-services.html">
+                        <button type="submit">Voir plus </button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <div class="footer">
+            <p id="logo_footer">
+                e.kea
+            </p>
+            <a href="vues/contact.html">
+                <p>Nous Contacter &nbsp;</p>
+            </a>
+        </div>
+    </footer>
+    <div class="script">
+        <script src="assets/js/script.js"></script>
+        <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
-    </nav>
-    <!---->
-    <div class="header_carrousel">
+
     </div>
-    <!--slider -->
-    <div class="carousel">
-      <div id="slider">
-
-        <div class="slide">
-          <img src="images/header.jpeg" alt="slide-1">
-        </div>
-
-        <div class="slide">
-          <img src="https://fondosmil.com/fondo/13706.jpg" alt="slide-2">
-        </div>
-        <div class="slide">
-          <img src="https://fondosmil.com/fondo/13698.jpg" alt="slide-3">
-        </div>
-      </div>
-    </div>
-    </div>
-  </header>
-  <!--main-->
-  <main>
-    <div class="main_accueil">
-
-      <!--section texte_defile-->
-      <section class="section_txt_defile">
-        <div class="txt_defile">
-          <p>-20% dès 99€ d'achat &nbsp;&nbsp; -35% sur les décorations &nbsp;&nbsp; -50% sur tout avec le code JADELIA
-          </p>
-
-        </div>
-      </section>
-      <!-->
-      <!--section 2: bienvenue -->
-      <section id="section_bienvenue">
-        <h1>Bienvenue !</h1>
-        <p>
-          Bienvenue dans notre univers de meubles et décoration !
-          Explorez des inspirations pour <br>créer votre espace idéal.
-          Découvrez des pièces uniques et de qualité pour embellir votre intérieur.
-        </p>
-      </section>
-
-      <!--section 3: inspiration -->
-      <section id="section_inspi">
-        <div id="txt_inspiration">
-          <h2>Nos inspirations</h2>
-          <p>
-            Découvrez nos inspirations
-          </p>
-          <form method="get" action="vues/vue-inspiration.html">
-            <button type="submit">Voir plus </button>
-          </form>
-        </div>
-
-        <div id="img_inspiration"></div>
-      </section>
-      <!--section 4: service -->
-      <section id="section_service">
-        <div id="img_service">
-        </div>
-        <div id="txt_service">
-          <h2>Nos services</h2>
-          <p>
-            Découvrez nos services de livraison
-          </p>
-          <form method="get" action="vues/vue-services.html">
-            <button type="submit">Voir plus </button>
-          </form>
-        </div>
-      </section>
-    </div>
-  </main>
-  <!--footer-->
-  <footer>
-    <div class="footer">
-      <p id="logo_footer">
-        e.kea
-      </p>
-      <a href="vues/vue-contacter">
-        <p>Nous Contacter &nbsp;</p>
-      </a>
-    </div>
-  </footer>
-  <div class="script">
-    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script src="assets/js/script.js"></script>
-  </div>
 </body>
 
 </html>
