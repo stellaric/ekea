@@ -72,28 +72,47 @@ window.onclick = function(event) {
 }
 
 /*--------------filtre---------*/
+// Filtrer les éléments pour afficher tous les produits au chargement de la page
+window.addEventListener('DOMContentLoaded', (event) => {
+  filterSelection(''); // Appel avec une chaîne vide pour afficher tous les éléments
+});
 
-filterSelection("all");
-
+// Fonction pour filtrer les éléments lorsqu'on clique sur un bouton de filtre
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
+  if (c === '') {
+    // Activer le lien "Tous" en ajoutant la classe "active"
+    document.getElementById("dropbtn").classList.add("active");
+  } else {
+    // Désactiver le lien "Tous" en supprimant la classe "active"
+    document.getElementById("dropbtn").classList.remove("active");
+  }
+
   for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    var filters = x[i].getAttribute("data-filter").split(" ");
+    if (filters.indexOf(c) > -1 || c === '') {
+      x[i].classList.add("show");
+    } else {
+      x[i].classList.remove("show");
+    }
   }
 }
 
+
+// Fonction pour ajouter une classe à un élément
 function w3AddClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
   }
 }
 
+// Fonction pour supprimer une classe d'un élément
 function w3RemoveClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
@@ -106,17 +125,18 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+// Lier les boutons de filtre aux fonctions de filtrage
+document.getElementById('btnAll').addEventListener('click', function() {
+  filterSelection('');
+});
+
+var filterButtons = document.getElementsByClassName('dropdown-content')[0].getElementsByTagName('a');
+for (var i = 0; i < filterButtons.length; i++) {
+  filterButtons[i].addEventListener('click', function() {
+    var filter = this.getAttribute('data-filter');
+    filterSelection(filter);
   });
 }
-
 
 
 //-----------------MODAL INSPIRATION-------------------------------------

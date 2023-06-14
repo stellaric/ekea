@@ -851,6 +851,20 @@ img.hover-shadow {
   color: white;
 }
 
+#btnAll {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+#btnAll:hover {
+  background-color: #da190b;
+}
+
+
 #dropbtn {
 
   width: 369px;
@@ -1135,18 +1149,26 @@ img.hover-shadow {
 
   /*____________________________page services _______________________*/
 
-
-  #main_service {
+#main_service {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    height: 1176px;
+    height: 1078px;
     background: #CB997E;
-  }
+}
 
   #titre_service {
     text-align: center;
-    height: 100%;
+ 
+  }
+
+.tab_service {
+    padding-bottom: 20px;
+}
+
+  .tab {
+     padding: 31px 11px;
+    text-align: center;
+    width: 126px;
   }
 
   .tabs {
@@ -1155,59 +1177,50 @@ img.hover-shadow {
     justify-content: center;
     font-size: larger;
     margin-left: 1px;
-  }
-
-  .tab {
-    padding: 10px 10px;
-    text-align: center;
-    width: 126px;
-  }
-
-  .tab_contenu {
+    height: 11%;
+}
+.tab_contenu {
     width: 76%;
     margin-left: 12%;
     flex-direction: column;
-    /* align-items: center; */
-    height: 80%;
+    align-items: center;
+    height: 89%;
     display: flex;
     justify-content: center;
-  }
+}
 
-  #tab1 {
-    display: flex;
+#tab1 {
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     height: 100%;
     width: 100%;
-  }
-
-  .ctn {
+}
+  
+.ctn {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-size: x-large;
     width: 100%;
-    height: 1050px;
-  }
+    height: 856px;
+}
 
-  .ctn_txt {
+  
+.ctn_txt {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    /* height: 350px; */
     width: 100%;
-  }
+}
 
-  .ctn_1_img,
-  .ctn_2_img {
+  .ctn_1_img, .ctn_2_img {
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 750px;
     background-position: center;
     width: 100%;
-
-  }
+}
 
   .tab-content {
     display: none;

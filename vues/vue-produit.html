@@ -57,7 +57,7 @@
             </div>
           </div>
         </div>
-      </div <!---->
+      </div>
     </nav>
     <!---->
     <!-- img header -->
@@ -69,27 +69,22 @@
 
   <main>
 
+
     <section id="section_produit">
       <h2>Produits</h2>
 
-
       <div class="dropdown" id="myBtnContainer">
-        <button class="btn active" id="dropbtn" onclick="filterSelection('all')">Filtre</button>
-        <div class="dropdown-content">
-          <a href="#" onclick="filterSelection('all')">Tous</a>
-          <a href="#" onclick="filterSelection('confort')">Confort</a>
-          <a href="#" onclick="filterSelection('surface')">Surface</a>
-          <a href="#" onclick="filterSelection('decoration')">Décoration</a>
+        <button class="btn active" id="btnAll" onclick="filterSelection('')">Tous</button>
 
+        <div class="dropdown-content">
+          <a href="#" onclick="filterSelection('confort')" data-filter="confort">Confort</a>
+          <a href="#" onclick="filterSelection('surface')" data-filter="surface">Surface</a>
+          <a href="#" onclick="filterSelection('decoration')" data-filter="decoration">Décoration</a>
         </div>
       </div>
 
-
       <div class="container">
-
-
-
-        <div class="filterDiv confort">
+        <div class="filterDiv confort show">
           <div class="titre_prod">
             <h4>Confort</h4>
           </div>
@@ -98,45 +93,39 @@
               onclick="openWindow();currentSlide(1)" />
             <img src="../images/img2.jpeg" alt="confort_2" class="hover-shadow cursor"
               onclick="openWindow();currentSlide(2)" />
-
           </div>
         </div>
 
 
-        <div class="filterDiv surface ">
+        <div class="filterDiv surface show">
           <div class="titre_prod">
             <h4>Surface</h4>
           </div>
 
-          <div class="ctn-surface ">
-
+          <div class="ctn-surface">
             <img src="../images/surface-1.jpeg" alt="surface_1" class="hover-shadow cursor"
               onclick="openWindow();currentSlide(3)" />
-            <img src="../images/surface-2.jpeg" alt="surface_2" class="hover-shadow cursor "
+            <img src="../images/surface-2.jpeg" alt="surface_2" class="hover-shadow cursor"
               onclick="openWindow();currentSlide(4)" />
-
           </div>
         </div>
 
-        <div class="filterDiv decoration ">
+        <div class="filterDiv decoration show">
           <div class="titre_prod">
             <h4>Décoration</h4>
           </div>
 
           <div class="ctn-deco">
-
             <img src="../images/deco-1.jpeg" alt="deco-1" style="object-position:center;" class="hover-shadow cursor"
               onclick="openWindow();currentSlide(5)" />
             <img src="../images/deco-2.jpeg" alt="deco-2" class="hover-shadow cursor"
               onclick="openWindow();currentSlide(6)" />
-
           </div>
         </div>
 
       </div>
 
       <div id="mywind" class="modal">
-
         <div class="modal-content">
           <div class="myProd">
             <img src="../images/confort_1.jpeg" alt="confort_1" class="hover-shadow cursor"
@@ -169,8 +158,6 @@
       </div>
     </section>
   </main>
-
-
 
   <!--footer-->
   <footer>
