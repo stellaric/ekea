@@ -82,19 +82,6 @@ body {
     color: black;
 }
 
-.sidenav-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-}
-
-.header-sidenav {
-    margin-top: 53%;
-    margin-bottom: 23px;
-}
-
 .header-sidenav h2 {
     color: white;
     font-family: 'Jost', sans-serif;
@@ -143,7 +130,6 @@ body {
 }
 
 .copyright {
-    padding: 40px;
     text-align: center;
     height: 93px;
 }
@@ -570,13 +556,6 @@ p#logo_footer {
     margin-bottom: -4px;
 }
 
-.caption-container {
-    text-align: center;
-    background-color: black;
-    padding: 2px 16px;
-    color: white;
-}
-
 .demo {
     opacity: 0.6;
 }
@@ -712,9 +691,6 @@ img.hover-shadow {
 }
 
 #tab1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     height: 623px;
     width: 100%;
 }
@@ -764,6 +740,9 @@ img.hover-shadow {
 .active {
     display: block;
 }
+
+
+/*_______________ _________________*/
 
 .show {
     display: block;
@@ -945,26 +924,6 @@ img.hover-shadow {
 
 /*_____________________page contact______________________*/
 
-#header_contact {
-    width: 100%;
-    background-color: #CB997E;
-}
-
-.body_contact {
-    margin: 0;
-    padding: 0;
-    background-color: #CB997E;
-}
-
-#titre_contact {
-    text-align: center;
-    font-size: 32px;
-}
-
-.error {
-    color: red
-}
-
 
 /* padding contenant */
 
@@ -1001,6 +960,9 @@ input[type=email]
 }
 
 
+/*______________page contact__________________*/
+
+
 /*-----------------------MAP----------------*/
 
 .bannierecontact {
@@ -1009,6 +971,19 @@ input[type=email]
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.main_contact {
+    height: 1162px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#titre_contact {
+    text-align: center;
+    font-size: 32px;
 }
 
 .container_map {
@@ -1033,16 +1008,49 @@ input[type=email]
     border-radius: 0 20px 20px 0;
 }
 
-.main_contact {
-    height: 1298px;
+
+/*_____________________page contact______________________*/
+
+.main_panier {
+    height: 780px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
-.formulaire {
-    width: 710px;
+.main_panier h3 {
+    text-align: center;
+}
+
+.article_1 {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fiche_panier {
+    display: flex;
+    flex-direction: row;
+}
+
+.prix {
+    margin-left: 30px;
+}
+
+.quantite {
+    margin: 50px;
+    width: 12px;
+    margin-left: 62px;
+}
+
+.panier a {
+    color: black;
+}
+
+.prix_panier {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 
@@ -1094,6 +1102,14 @@ input[type=email]
     #txt_inspiration {
         width: 100%;
     }
+    #txt_inspiration button {
+        background: rgba(30, 30, 30, 0.82);
+        border-radius: 15px;
+        color: white;
+        width: 121px;
+        margin-left: 33%;
+        text-align: center;
+    }
     /*section services*/
     /*suppresion de div img_inspiration + modification du div txt_inspiration*/
     #img_service {
@@ -1102,13 +1118,21 @@ input[type=email]
     #txt_service {
         width: 100%;
     }
+    #txt_service button {
+        background: rgba(30, 30, 30, 0.82);
+        border-radius: 15px;
+        color: white;
+        width: 121px;
+        margin-left: 33%;
+        text-align: center;
+    }
     /*____________________________page inspiration_______________________*/
     #header_inspiration {
         height: 222px;
     }
-    #section_inspiration {
+    #section_produit {
         background-color: #B7B7A4;
-        height: 905px;
+        height: 1005px;
         width: 100%;
         display: flex;
         justify-content: flex-start;
@@ -1131,6 +1155,21 @@ input[type=email]
         justify-content: space-around;
         width: 276px;
     }
+    .container {
+        margin-top: 20px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .confort,
+    .surface,
+    .decoration {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    /*____________________________________________________*/
     .total_contenu {
         display: flex;
         flex-direction: wrap;
@@ -1210,11 +1249,6 @@ input[type=email]
         width: 100%;
         background-color: #CB997E;
     }
-    .body_contact {
-        margin: 0;
-        padding: 0;
-        background-color: #CB997E;
-    }
     #titre_contact {
         text-align: center;
         font-size: 32px;
@@ -1232,10 +1266,7 @@ input[type=email]
     input[type=text],
     input[type=message],
     input[type=tel],
-    input[type=email]
-    /*input[type=date],
-  input[type=number]*/
-    {
+    input[type=email] {
         width: 100%;
         padding: 15px;
         margin: 5px 0 22px 0;
@@ -1346,16 +1377,9 @@ input[type=email]
     .tab_contenu {
         width: 76%;
         margin-left: 12%;
-        flex-direction: column;
-        /* align-items: center; */
         height: 80%;
-        display: flex;
-        justify-content: center;
     }
     #tab1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         height: 100%;
         width: 100%;
     }
@@ -1370,7 +1394,10 @@ input[type=email]
     .ctn_txt {
         display: flex;
         flex-direction: column;
+        width: 90%;
+        text-align: center;
     }
+    /*_________________________________*/
     /* Overwrite default styles of hr */
     hr {
         border: 1px solid white;
@@ -1390,6 +1417,48 @@ input[type=email]
     .registerbtn:hover {
         opacity: 1;
     }
+    /*-----------------------------------------------------------------------PAGE PANIER -----------------------------------------*/
+    .articles img {
+        width: 151px;
+        height: 214px;
+        margin-right: 0;
+    }
+    .description {
+        padding: 10px;
+    }
+    .articles {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 50%;
+        margin: 30px;
+    }
+    .article_1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 350px;
+    }
+    form {
+        flex-direction: column;
+        width: 390px;
+        display: flex;
+    }
+    input {
+        width: 20px;
+    }
+    .quantite {
+        margin: 40px;
+    }
+    .prix {
+        margin-top: 50px;
+    }
+    .fiche_panier {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 86px;
+    }
     /*__________version mobile______*/
     @media only screen and (max-width: 767px) {
         header {
@@ -1399,24 +1468,19 @@ input[type=email]
         .iconify {
             margin-left: 10px;
         }
-        /*barre de navigation*/
-        /* .sidenav {
+        .sidenav {
             height: 100%;
             width: 0;
             position: fixed;
-         
             z-index: 1;
-
             top: 0;
             left: 0;
             background-color: #a5a58df8;
             overflow-x: hidden;
-
             transition: 0.5s;
-
             padding-top: 100px;
         }
-        /*.sidenav h2 {
+        .sidenav h2 {
             text-align: center;
             font-size: 48px;
             color: white;
@@ -1454,21 +1518,6 @@ input[type=email]
         .reseaux {
             display: flex;
             justify-content: center;
-        }
-        */
-        .banniere {
-            background-image: url("../../images/header_produit.jpeg");
-            height: 230px;
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .bannierecontact {
-            background-image: url("../../images/header_contact.jpg");
-            height: 230px;
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
         }
         /*____________________PRODUITS__________________*/
         /*------------DROPDOWN-------------------------*/
@@ -1513,6 +1562,22 @@ input[type=email]
             display: block;
         }
         /*-----------filter------------------*/
+        #section_produit {
+            background-color: #B7B7A4;
+            height: 1005px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            /* margin-top: 20px; */
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
         .container_produits {
             margin-top: 20px;
             overflow: hidden;
@@ -1520,24 +1585,22 @@ input[type=email]
             flex-direction: column;
             height: 100%;
         }
-        .confort img,
-        .surface img,
-        .decoration img {
-            width: 100%;
-        }
         .container_produits img {
             width: 100%;
         }
         .confort {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: space-around;
         }
         .surface {
             display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            background-color: #999;
+            flex-direction: column;
+            width: 100%;
+        }
+        .decoration {
+            display: flex;
+            flex-direction: column;
             width: 100%;
         }
         /* Style the buttons */
@@ -1558,15 +1621,6 @@ input[type=email]
         .section_confort {
             display: flex;
             flex-direction: row;
-        }
-        /*-------------FOOTER------------*/
-        footer {
-            background-color: #1e1e1e9a;
-            height: 100px;
-            margin-bottom: auto;
-        }
-        .footer-content {
-            padding: 20px;
         }
         /*.copyright {
   text-align: center;
@@ -1592,18 +1646,21 @@ input[type=email]
             text-align: center;
             font-size: 32px;
         }
-        .formulaire {
-            width: 390px;
+        .banniere {
+            background-image: url("../../images/header_produit.jpeg");
+            height: 230px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .bannierecontact {
+            background-image: url("../../images/header_contact.jpg");
+            height: 230px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         /* padding contenant */
-        .container_contact {
-            padding: 16px;
-            background-color: #C7815C;
-            ;
-            border-radius: 10px;
-            justify-content: center;
-            margin: 10% 10%;
-        }
         /* largeurs des champs*/
         input[type=text],
         input[type=message],
@@ -1712,86 +1769,42 @@ input[type=number]*/
             justify-content: space-between;
             font-size: 20px;
         }
-        .footer {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            background: black;
-            color: white;
-            height: 139px;
-            text-align: center;
-            align-items: center;
-        }
-        a#logo {
-            text-decoration: none;
-            color: white;
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 40px;
-            line-height: 48px;
-        }
-        /*-----------------------------------------------------------------------PAGE PANIER -----------------------------------------*/
-        .articles img {
-            width: 151px;
-            height: 214px;
-            margin-right: 0;
-        }
-        .description {
-            padding: 10px;
-        }
-        .articles {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-            width: 50%;
-            margin: 30px;
-        }
-        .article_1,
-        .article_2 {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 350px;
-        }
-        form {
-            flex-direction: column;
-            width: 390px;
-            display: flex;
-        }
-        input {
-            width: 20px;
-        }
-        .quantite {
-            margin: 40px;
-        }
-        .prix {
-            margin-top: 50px;
-        }
-        .fiche_panier {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            width: 86px;
-        }
-        /* align-items: center;
-    /* height: 350px; */
-        /* width: 100%;
-  }
-*/
-        .ctn_1_img,
-        .ctn_2_img {
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100%;
-            background-position: center;
-            width: 100%;
-        }
-        .tab-content {
-            display: none;
-        }
-        .active {
-            display: block;
-        }
+    }
+    .ctn_1_img,
+    .ctn_2_img {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        background-position: center;
+        width: 100%;
+    }
+    .tab-content {
+        display: none;
+    }
+    .active {
+        display: block;
+    }
+    /*__panier vie__*/
+    .main_panier_vide {
+        /* height: 777px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .panier {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* gap: 10px; */
+        height: 754px;
+        margin-bottom: 30px;
+    }
+    .ctn_2_img {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30%;
+        background-position: center;
+        width: 100%;
     }
 }

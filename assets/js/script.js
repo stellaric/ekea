@@ -1,53 +1,54 @@
 // Fonctionnalite en js 
 
 //______________________NAVBAR____________________________________
+// Fonction pour ouvrir le menu de navigation
 function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("mySidenav").style.width = "100%"; // Définit la largeur du menu sur 100% pour l'ouvrir complètement
 }
 
+// Fonction pour fermer le menu de navigation
 function closeNav() {
-    console.log("Fermeture du menu"); // Vérifiez si ce message est affiché dans la console du navigateur
-    document.getElementById("mySidenav").style.width = "0";
+    console.log("Fermeture du menu"); // Un message de débogage pour vérifier si cette fonction est appelée
+    document.getElementById("mySidenav").style.width = "0"; // Réduit la largeur du menu à 0 pour le fermer
 }
+
+
+
 
 //_______________________CARROUSEL___________________________________
-//page accueil & service (carrousel)
-// obtiens  l'element de  slider
+// Obtention de l'élément du slider
 var slider = document.getElementById("slider");
 
-// obtiens  les element de la diapositives
+// Obtention des éléments des diapositives
 var slides = slider.querySelectorAll(".slide");
 
-// Creation d'un index pour commencer le diapositive
+// Création d'un index pour commencer la diapositive
 var indice = 0;
 
-// fonction pour montrer le second diapositives 
+// Fonction pour afficher la diapositive suivante
 function next() {
-    // Ocultamos todas las diapositivas
+    // Masquons toutes les diapositives
     for (var i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
 
-    // Incrementamos el índice
+    // Incrémentation de l'indice
     indice++;
 
-    // Si llegamos al final de la lista de diapositivas, volvemos al principio
+    // Si nous atteignons la fin de la liste des diapositives, revenons au début
     if (indice >= slides.length) {
         indice = 0;
     }
 
-    // Mostramos la diapositiva actual
+    // Affichage de la diapositive actuelle
     slides[indice].style.display = "block";
 }
 
-// Mostramos la primera diapositiva
+// Affichage de la première diapositive
 next();
 
-// Establecemos un intervalo para mostrar la siguiente diapositiva cada 3 segundos
+// Définition d'un intervalle pour afficher la diapositive suivante toutes les 3 secondes
 setInterval(next, 3000);
-
-
-
 
 
 
@@ -74,8 +75,7 @@ window.onclick = function(event) {
 }
 
 /*--------------filtre---------*/
-
-filterSelection("all");
+filterSelection("all")
 
 function filterSelection(c) {
     var x, i;
@@ -126,62 +126,49 @@ for (var i = 0; i < btns.length; i++) {
 
 
 
-
 /*___________________REGEX_______*/
 
 
+function validateForm() {
+    // Récupérer les valeurs des champs
+    const nom = document.getElementById('nom').value;
+    const prenom = document.getElementById('prenom').value;
+    const email = document.getElementById('email').value;
 
-function validateForm(event) {
-    event.preventDefault(); // Empêche la soumission par défaut du formulaire
+    // Regex pour validation
+    const nameRegex = /^[A-Za-z\s]+$/; // Permet seulement les lettres et les espaces
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Format d'e-mail valide
 
-    // Récupérer les données du formulaire
-    var nom = document.getElementById('nom').value;
-    var prenom = document.getElementById('prenom').value;
-    var email = document.getElementById('email').value;
-    var sujet = document.getElementById('sujet').value;
-    var message = document.getElementById('message').value;
+    // Réinitialiser les messages d'erreur
+    document.getElementById('nom-error').textContent = '';
+    document.getElementById('prenom-error').textContent = '';
+    document.getElementById('email-error').textContent = '';
 
-    // Expressions régulières pour la validation
-    var nameRegex = /^[a-zA-Z\s]+$/;
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    // Valider les champs
+    let isValid = true;
 
-    // Validation du nom
     if (!nameRegex.test(nom)) {
-        showError('name', 'Le nom n\'est pas valide. Veuillez utiliser uniquement des lettres.');
-        return;
+        document.getElementById('nom-error').textContent = 'Nom invalide';
+        isValid = false;
     }
 
-    // Validation de l'email
+    if (!nameRegex.test(prenom)) {
+        document.getElementById('prenom-error').textContent = 'Prénom invalide';
+        isValid = false;
+    }
+
     if (!emailRegex.test(email)) {
-        showError('email', 'L\'email n\'est pas valide. Veuillez entrer une adresse email correcte.');
-        return;
+        document.getElementById('email-error').textContent = 'E-mail invalide';
+        isValid = false;
     }
 
-    // Validation du sujet
-    if (subject.trim() === '') {
-        showError('subject', 'Veuillez entrer un sujet.');
-        return;
+    if (isValid) {
+        alert("Félicitations !! Votre message a bien été envoyé.");
     }
 
-    // Validation du message
-    if (message.length < 10) {
-        showError('message', 'Le message doit contenir au moins 10 caractères.');
-        return;
-    }
-
-    // Toutes les validations sont passées, soumission du formulaire
-    // Remplacez l'action par l'URL de l'endroit où vous souhaitez envoyer les données du formulaire
-    document.getElementById('contactForm').action = "mailto:stella.richal.pro@gmail.com";
-    document.getElementById('contactForm').submit();
+    return isValid;
 }
 
-function showError(field, message) {
-    var errorElement = document.createElement('p');
-    errorElement.className = 'error';
-    errorElement.innerText = message;
-    var inputElement = document.getElementById(field);
-    inputElement.parentNode.insertBefore(errorElement, inputElement.nextSibling);
-}
 
 
 /**_______________tabs_____________ */
